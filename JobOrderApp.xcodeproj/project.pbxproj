@@ -3,27 +3,53 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		598B5DBC0A0C6D6C21A8AC01 /* Pods_JobOrderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE8019D3B7A1E2C14528A56 /* Pods_JobOrderApp.framework */; };
 		7F3D92BA25D4C6C0002D3BE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92B925D4C6C0002D3BE3 /* AppDelegate.swift */; };
 		7F3D92BC25D4C6C0002D3BE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92BB25D4C6C0002D3BE3 /* SceneDelegate.swift */; };
-		7F3D92BE25D4C6C0002D3BE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92BD25D4C6C0002D3BE3 /* ViewController.swift */; };
-		7F3D92C125D4C6C0002D3BE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3D92BF25D4C6C0002D3BE3 /* Main.storyboard */; };
+		7F3D92C125D4C6C0002D3BE3 /* JobOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3D92BF25D4C6C0002D3BE3 /* JobOrder.storyboard */; };
 		7F3D92C325D4C6C2002D3BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3D92C225D4C6C2002D3BE3 /* Assets.xcassets */; };
 		7F3D92C625D4C6C2002D3BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3D92C425D4C6C2002D3BE3 /* LaunchScreen.storyboard */; };
+		7F3D92D625D4C7DC002D3BE3 /* JobOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92D425D4C7DC002D3BE3 /* JobOrderViewController.swift */; };
+		7F3D92D725D4C7DC002D3BE3 /* JobOrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3D92D525D4C7DC002D3BE3 /* JobOrderView.xib */; };
+		7F3D92DB25D4C816002D3BE3 /* JobOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92DA25D4C816002D3BE3 /* JobOrderPresenter.swift */; };
+		7F3D92DE25D4C822002D3BE3 /* JobOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92DD25D4C822002D3BE3 /* JobOrderView.swift */; };
+		7F3D92EA25D4CAEA002D3BE3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92E925D4CAEA002D3BE3 /* BaseViewController.swift */; };
+		7F3D92F225D4CC0C002D3BE3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92F025D4CC0C002D3BE3 /* LoginViewController.swift */; };
+		7F3D92F325D4CC0C002D3BE3 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3D92F125D4CC0C002D3BE3 /* LoginView.xib */; };
+		7F3D92F725D4CC21002D3BE3 /* LoginViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92F625D4CC21002D3BE3 /* LoginViewPresenter.swift */; };
+		7F3D92FB25D4CC2A002D3BE3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92FA25D4CC2A002D3BE3 /* LoginView.swift */; };
+		7F3D930025D4CC71002D3BE3 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92FF25D4CC71002D3BE3 /* BaseView.swift */; };
+		7F3D930325D4CC83002D3BE3 /* BasePresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D930225D4CC83002D3BE3 /* BasePresenterView.swift */; };
+		7F3D930625D4D182002D3BE3 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3D930525D4D182002D3BE3 /* Auth.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61CC8E40A9543BA917D3F327 /* Pods-JobOrderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobOrderApp.release.xcconfig"; path = "Target Support Files/Pods-JobOrderApp/Pods-JobOrderApp.release.xcconfig"; sourceTree = "<group>"; };
 		7F3D92B625D4C6C0002D3BE3 /* JobOrderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobOrderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3D92B925D4C6C0002D3BE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F3D92BB25D4C6C0002D3BE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F3D92BD25D4C6C0002D3BE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7F3D92C025D4C6C0002D3BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F3D92C025D4C6C0002D3BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/JobOrder.storyboard; sourceTree = "<group>"; };
 		7F3D92C225D4C6C2002D3BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F3D92C525D4C6C2002D3BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F3D92C725D4C6C2002D3BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F3D92D425D4C7DC002D3BE3 /* JobOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobOrderViewController.swift; sourceTree = "<group>"; };
+		7F3D92D525D4C7DC002D3BE3 /* JobOrderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobOrderView.xib; sourceTree = "<group>"; };
+		7F3D92DA25D4C816002D3BE3 /* JobOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobOrderPresenter.swift; sourceTree = "<group>"; };
+		7F3D92DD25D4C822002D3BE3 /* JobOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobOrderView.swift; sourceTree = "<group>"; };
+		7F3D92E925D4CAEA002D3BE3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7F3D92F025D4CC0C002D3BE3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7F3D92F125D4CC0C002D3BE3 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		7F3D92F625D4CC21002D3BE3 /* LoginViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewPresenter.swift; sourceTree = "<group>"; };
+		7F3D92FA25D4CC2A002D3BE3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7F3D92FF25D4CC71002D3BE3 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		7F3D930225D4CC83002D3BE3 /* BasePresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterView.swift; sourceTree = "<group>"; };
+		7F3D930525D4D182002D3BE3 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		8CE8019D3B7A1E2C14528A56 /* Pods_JobOrderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobOrderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F271A1700437292050679D07 /* Pods-JobOrderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobOrderApp.debug.xcconfig"; path = "Target Support Files/Pods-JobOrderApp/Pods-JobOrderApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				598B5DBC0A0C6D6C21A8AC01 /* Pods_JobOrderApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C31F5D7B0F9DECEB8E77BB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CE8019D3B7A1E2C14528A56 /* Pods_JobOrderApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7F3D92AD25D4C6C0002D3BE3 = {
 			isa = PBXGroup;
 			children = (
 				7F3D92B825D4C6C0002D3BE3 /* JobOrderApp */,
 				7F3D92B725D4C6C0002D3BE3 /* Products */,
+				D0E8FA06B8D74B9B2A291F78 /* Pods */,
+				1C31F5D7B0F9DECEB8E77BB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +93,107 @@
 		7F3D92B825D4C6C0002D3BE3 /* JobOrderApp */ = {
 			isa = PBXGroup;
 			children = (
-				7F3D92B925D4C6C0002D3BE3 /* AppDelegate.swift */,
-				7F3D92BB25D4C6C0002D3BE3 /* SceneDelegate.swift */,
-				7F3D92BD25D4C6C0002D3BE3 /* ViewController.swift */,
-				7F3D92BF25D4C6C0002D3BE3 /* Main.storyboard */,
-				7F3D92C225D4C6C2002D3BE3 /* Assets.xcassets */,
-				7F3D92C425D4C6C2002D3BE3 /* LaunchScreen.storyboard */,
-				7F3D92C725D4C6C2002D3BE3 /* Info.plist */,
+				7F3D92E825D4CADB002D3BE3 /* Base */,
+				7F3D92D125D4C6F1002D3BE3 /* App */,
+				7F3D92D025D4C6DB002D3BE3 /* Models */,
+				7F3D92CF25D4C6D1002D3BE3 /* ViewControllers */,
+				7F3D92CE25D4C6C9002D3BE3 /* Services */,
+				7F3D92D325D4C74A002D3BE3 /* Storyboard */,
+				7F3D92D225D4C71A002D3BE3 /* SupportingFiles */,
 			);
 			path = JobOrderApp;
+			sourceTree = "<group>";
+		};
+		7F3D92CE25D4C6C9002D3BE3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7F3D92CF25D4C6D1002D3BE3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D92EF25D4CBFC002D3BE3 /* Auth */,
+				7F3D92ED25D4CBD8002D3BE3 /* JobOrder */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7F3D92D025D4C6DB002D3BE3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F3D92D125D4C6F1002D3BE3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D92B925D4C6C0002D3BE3 /* AppDelegate.swift */,
+				7F3D92BB25D4C6C0002D3BE3 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7F3D92D225D4C71A002D3BE3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D92C225D4C6C2002D3BE3 /* Assets.xcassets */,
+				7F3D92C725D4C6C2002D3BE3 /* Info.plist */,
+				7F3D92C425D4C6C2002D3BE3 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		7F3D92D325D4C74A002D3BE3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D92BF25D4C6C0002D3BE3 /* JobOrder.storyboard */,
+				7F3D930525D4D182002D3BE3 /* Auth.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7F3D92E825D4CADB002D3BE3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D92E925D4CAEA002D3BE3 /* BaseViewController.swift */,
+				7F3D92FF25D4CC71002D3BE3 /* BaseView.swift */,
+				7F3D930225D4CC83002D3BE3 /* BasePresenterView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7F3D92ED25D4CBD8002D3BE3 /* JobOrder */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D92D425D4C7DC002D3BE3 /* JobOrderViewController.swift */,
+				7F3D92DA25D4C816002D3BE3 /* JobOrderPresenter.swift */,
+				7F3D92DD25D4C822002D3BE3 /* JobOrderView.swift */,
+				7F3D92D525D4C7DC002D3BE3 /* JobOrderView.xib */,
+			);
+			path = JobOrder;
+			sourceTree = "<group>";
+		};
+		7F3D92EF25D4CBFC002D3BE3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D92F025D4CC0C002D3BE3 /* LoginViewController.swift */,
+				7F3D92F625D4CC21002D3BE3 /* LoginViewPresenter.swift */,
+				7F3D92FA25D4CC2A002D3BE3 /* LoginView.swift */,
+				7F3D92F125D4CC0C002D3BE3 /* LoginView.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D0E8FA06B8D74B9B2A291F78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F271A1700437292050679D07 /* Pods-JobOrderApp.debug.xcconfig */,
+				61CC8E40A9543BA917D3F327 /* Pods-JobOrderApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F3D92CA25D4C6C2002D3BE3 /* Build configuration list for PBXNativeTarget "JobOrderApp" */;
 			buildPhases = (
+				EA5E2052DB51777895AD0685 /* [CP] Check Pods Manifest.lock */,
 				7F3D92B225D4C6C0002D3BE3 /* Sources */,
 				7F3D92B325D4C6C0002D3BE3 /* Frameworks */,
 				7F3D92B425D4C6C0002D3BE3 /* Resources */,
+				86B52F72A058C5693BE8F413 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,34 +255,87 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F3D930625D4D182002D3BE3 /* Auth.storyboard in Resources */,
+				7F3D92F325D4CC0C002D3BE3 /* LoginView.xib in Resources */,
 				7F3D92C625D4C6C2002D3BE3 /* LaunchScreen.storyboard in Resources */,
+				7F3D92D725D4C7DC002D3BE3 /* JobOrderView.xib in Resources */,
 				7F3D92C325D4C6C2002D3BE3 /* Assets.xcassets in Resources */,
-				7F3D92C125D4C6C0002D3BE3 /* Main.storyboard in Resources */,
+				7F3D92C125D4C6C0002D3BE3 /* JobOrder.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86B52F72A058C5693BE8F413 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobOrderApp/Pods-JobOrderApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobOrderApp/Pods-JobOrderApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobOrderApp/Pods-JobOrderApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA5E2052DB51777895AD0685 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JobOrderApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F3D92B225D4C6C0002D3BE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F3D92BE25D4C6C0002D3BE3 /* ViewController.swift in Sources */,
+				7F3D92F225D4CC0C002D3BE3 /* LoginViewController.swift in Sources */,
+				7F3D92DE25D4C822002D3BE3 /* JobOrderView.swift in Sources */,
+				7F3D92D625D4C7DC002D3BE3 /* JobOrderViewController.swift in Sources */,
+				7F3D92FB25D4CC2A002D3BE3 /* LoginView.swift in Sources */,
+				7F3D92DB25D4C816002D3BE3 /* JobOrderPresenter.swift in Sources */,
 				7F3D92BA25D4C6C0002D3BE3 /* AppDelegate.swift in Sources */,
 				7F3D92BC25D4C6C0002D3BE3 /* SceneDelegate.swift in Sources */,
+				7F3D930025D4CC71002D3BE3 /* BaseView.swift in Sources */,
+				7F3D92EA25D4CAEA002D3BE3 /* BaseViewController.swift in Sources */,
+				7F3D92F725D4CC21002D3BE3 /* LoginViewPresenter.swift in Sources */,
+				7F3D930325D4CC83002D3BE3 /* BasePresenterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7F3D92BF25D4C6C0002D3BE3 /* Main.storyboard */ = {
+		7F3D92BF25D4C6C0002D3BE3 /* JobOrder.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7F3D92C025D4C6C0002D3BE3 /* Base */,
 			);
-			name = Main.storyboard;
+			name = JobOrder.storyboard;
 			sourceTree = "<group>";
 		};
 		7F3D92C425D4C6C2002D3BE3 /* LaunchScreen.storyboard */ = {
@@ -283,12 +467,13 @@
 		};
 		7F3D92CB25D4C6C2002D3BE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F271A1700437292050679D07 /* Pods-JobOrderApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YRWDL64LRS;
-				INFOPLIST_FILE = JobOrderApp/Info.plist;
+				INFOPLIST_FILE = JobOrderApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +487,13 @@
 		};
 		7F3D92CC25D4C6C2002D3BE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61CC8E40A9543BA917D3F327 /* Pods-JobOrderApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YRWDL64LRS;
-				INFOPLIST_FILE = JobOrderApp/Info.plist;
+				INFOPLIST_FILE = JobOrderApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
