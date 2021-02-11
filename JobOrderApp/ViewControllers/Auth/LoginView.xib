@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,22 +19,37 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bee Clothing Co." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzt-FB-3uK">
+                    <rect key="frame" x="132" y="343" width="150.5" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLogo" translatesAutoresizingMaskIntoConstraints="NO" id="qza-2d-Mxj">
+                    <rect key="frame" x="50" y="64" width="314" height="269"/>
+                </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RVR-69-Ibx">
-                    <rect key="frame" x="50" y="344" width="314" height="118"/>
+                    <rect key="frame" x="50" y="416" width="314" height="118"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DeL-9C-bIh">
                             <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" textContentType="email"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXy-Ls-Q6S">
                             <rect key="frame" x="0.0" y="44" width="314" height="34"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0g-LR-Ne1">
                             <rect key="frame" x="0.0" y="88" width="314" height="30"/>
-                            <state key="normal" title="Login"/>
+                            <color key="backgroundColor" name="primary"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" name="content"/>
+                            </state>
+                            <connections>
+                                <action selector="loginButtonHandler:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="Cja-iQ-CJD"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -41,14 +57,31 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="RVR-69-Ibx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="300" id="NBr-H1-piA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qza-2d-Mxj" secondAttribute="trailing" constant="50" id="7sT-NW-mVo"/>
+                <constraint firstItem="qza-2d-Mxj" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="CE9-we-JE4"/>
+                <constraint firstItem="qza-2d-Mxj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="Kzg-cr-0tw"/>
+                <constraint firstItem="qza-2d-Mxj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="NR6-zH-aFS"/>
+                <constraint firstItem="dzt-FB-3uK" firstAttribute="centerX" secondItem="qza-2d-Mxj" secondAttribute="centerX" id="Pt9-Ms-Jsf"/>
                 <constraint firstItem="RVR-69-Ibx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="RhT-hR-ogb"/>
+                <constraint firstItem="RVR-69-Ibx" firstAttribute="top" secondItem="dzt-FB-3uK" secondAttribute="bottom" constant="50" id="SJR-Uj-5ih"/>
+                <constraint firstItem="dzt-FB-3uK" firstAttribute="top" secondItem="qza-2d-Mxj" secondAttribute="bottom" constant="10" id="fH2-n9-Yyd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RVR-69-Ibx" secondAttribute="trailing" constant="50" id="gyR-JJ-pAt"/>
             </constraints>
+            <connections>
+                <outlet property="emailTextField" destination="DeL-9C-bIh" id="TKu-ws-i59"/>
+                <outlet property="passwordTextField" destination="DXy-Ls-Q6S" id="1rp-UT-yIF"/>
+            </connections>
             <point key="canvasLocation" x="-197.10144927536234" y="84.375"/>
         </view>
     </objects>
     <resources>
+        <image name="icLogo" width="800" height="800"/>
+        <namedColor name="content">
+            <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="1" green="0.7686274509803922" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

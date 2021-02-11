@@ -25,6 +25,18 @@
 		7F3D930025D4CC71002D3BE3 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92FF25D4CC71002D3BE3 /* BaseView.swift */; };
 		7F3D930325D4CC83002D3BE3 /* BasePresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D930225D4CC83002D3BE3 /* BasePresenterView.swift */; };
 		7F3D930625D4D182002D3BE3 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3D930525D4D182002D3BE3 /* Auth.storyboard */; };
+		7F3D931725D4E2F3002D3BE3 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D931625D4E2F3002D3BE3 /* BaseService.swift */; };
+		7F3D931B25D4E36E002D3BE3 /* CarryKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D931A25D4E36E002D3BE3 /* CarryKeychain.swift */; };
+		7F3D932525D4E8A7002D3BE3 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D932425D4E8A7002D3BE3 /* UserService.swift */; };
+		7F3D932825D4E8CD002D3BE3 /* BaseMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D932725D4E8CD002D3BE3 /* BaseMoyaProvider.swift */; };
+		7F3D932B25D4E963002D3BE3 /* CoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D932A25D4E963002D3BE3 /* CoreService.swift */; };
+		7F3D933125D4F895002D3BE3 /* VerbosePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D933025D4F895002D3BE3 /* VerbosePlugin.swift */; };
+		7F3D933D25D4FFF5002D3BE3 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D933C25D4FFF5002D3BE3 /* AuthResponse.swift */; };
+		7F3D934025D50296002D3BE3 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D933F25D50296002D3BE3 /* BaseResponse.swift */; };
+		7F3D934725D515E9002D3BE3 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D934625D515E9002D3BE3 /* Company.swift */; };
+		7F3D934B25D5196F002D3BE3 /* NotifName+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D934A25D5196F002D3BE3 /* NotifName+Ext.swift */; };
+		7F3D934F25D519C9002D3BE3 /* BeeClothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D934E25D519C9002D3BE3 /* BeeClothing.swift */; };
+		7F3D935225D51B5A002D3BE3 /* JobOrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D935125D51B5A002D3BE3 /* JobOrderService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +60,18 @@
 		7F3D92FF25D4CC71002D3BE3 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		7F3D930225D4CC83002D3BE3 /* BasePresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterView.swift; sourceTree = "<group>"; };
 		7F3D930525D4D182002D3BE3 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		7F3D931625D4E2F3002D3BE3 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		7F3D931A25D4E36E002D3BE3 /* CarryKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarryKeychain.swift; sourceTree = "<group>"; };
+		7F3D932425D4E8A7002D3BE3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		7F3D932725D4E8CD002D3BE3 /* BaseMoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMoyaProvider.swift; sourceTree = "<group>"; };
+		7F3D932A25D4E963002D3BE3 /* CoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreService.swift; sourceTree = "<group>"; };
+		7F3D933025D4F895002D3BE3 /* VerbosePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbosePlugin.swift; sourceTree = "<group>"; };
+		7F3D933C25D4FFF5002D3BE3 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		7F3D933F25D50296002D3BE3 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		7F3D934625D515E9002D3BE3 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		7F3D934A25D5196F002D3BE3 /* NotifName+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotifName+Ext.swift"; sourceTree = "<group>"; };
+		7F3D934E25D519C9002D3BE3 /* BeeClothing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeClothing.swift; sourceTree = "<group>"; };
+		7F3D935125D51B5A002D3BE3 /* JobOrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobOrderService.swift; sourceTree = "<group>"; };
 		8CE8019D3B7A1E2C14528A56 /* Pods_JobOrderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobOrderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F271A1700437292050679D07 /* Pods-JobOrderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobOrderApp.debug.xcconfig"; path = "Target Support Files/Pods-JobOrderApp/Pods-JobOrderApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +131,11 @@
 		7F3D92CE25D4C6C9002D3BE3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7F3D932E25D4F637002D3BE3 /* API */,
+				7F3D931625D4E2F3002D3BE3 /* BaseService.swift */,
+				7F3D932725D4E8CD002D3BE3 /* BaseMoyaProvider.swift */,
+				7F3D932A25D4E963002D3BE3 /* CoreService.swift */,
+				7F3D933025D4F895002D3BE3 /* VerbosePlugin.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -123,6 +152,8 @@
 		7F3D92D025D4C6DB002D3BE3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7F3D933B25D4FFE2002D3BE3 /* Auth */,
+				7F3D934625D515E9002D3BE3 /* Company.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -139,6 +170,9 @@
 		7F3D92D225D4C71A002D3BE3 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				7F3D934D25D51999002D3BE3 /* Constants */,
+				7F3D934925D5195A002D3BE3 /* Extensions */,
+				7F3D931925D4E35E002D3BE3 /* Helpers */,
 				7F3D92C225D4C6C2002D3BE3 /* Assets.xcassets */,
 				7F3D92C725D4C6C2002D3BE3 /* Info.plist */,
 				7F3D92C425D4C6C2002D3BE3 /* LaunchScreen.storyboard */,
@@ -161,6 +195,7 @@
 				7F3D92E925D4CAEA002D3BE3 /* BaseViewController.swift */,
 				7F3D92FF25D4CC71002D3BE3 /* BaseView.swift */,
 				7F3D930225D4CC83002D3BE3 /* BasePresenterView.swift */,
+				7F3D933F25D50296002D3BE3 /* BaseResponse.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -185,6 +220,47 @@
 				7F3D92F125D4CC0C002D3BE3 /* LoginView.xib */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		7F3D931925D4E35E002D3BE3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D931A25D4E36E002D3BE3 /* CarryKeychain.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7F3D932E25D4F637002D3BE3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D932425D4E8A7002D3BE3 /* UserService.swift */,
+				7F3D935125D51B5A002D3BE3 /* JobOrderService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7F3D933B25D4FFE2002D3BE3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D933C25D4FFF5002D3BE3 /* AuthResponse.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		7F3D934925D5195A002D3BE3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D934A25D5196F002D3BE3 /* NotifName+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7F3D934D25D51999002D3BE3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D934E25D519C9002D3BE3 /* BeeClothing.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		D0E8FA06B8D74B9B2A291F78 /* Pods */ = {
@@ -313,16 +389,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F3D932525D4E8A7002D3BE3 /* UserService.swift in Sources */,
+				7F3D934B25D5196F002D3BE3 /* NotifName+Ext.swift in Sources */,
 				7F3D92F225D4CC0C002D3BE3 /* LoginViewController.swift in Sources */,
+				7F3D933125D4F895002D3BE3 /* VerbosePlugin.swift in Sources */,
+				7F3D934725D515E9002D3BE3 /* Company.swift in Sources */,
 				7F3D92DE25D4C822002D3BE3 /* JobOrderView.swift in Sources */,
+				7F3D934F25D519C9002D3BE3 /* BeeClothing.swift in Sources */,
+				7F3D933D25D4FFF5002D3BE3 /* AuthResponse.swift in Sources */,
+				7F3D934025D50296002D3BE3 /* BaseResponse.swift in Sources */,
+				7F3D932825D4E8CD002D3BE3 /* BaseMoyaProvider.swift in Sources */,
 				7F3D92D625D4C7DC002D3BE3 /* JobOrderViewController.swift in Sources */,
 				7F3D92FB25D4CC2A002D3BE3 /* LoginView.swift in Sources */,
+				7F3D932B25D4E963002D3BE3 /* CoreService.swift in Sources */,
 				7F3D92DB25D4C816002D3BE3 /* JobOrderPresenter.swift in Sources */,
 				7F3D92BA25D4C6C0002D3BE3 /* AppDelegate.swift in Sources */,
 				7F3D92BC25D4C6C0002D3BE3 /* SceneDelegate.swift in Sources */,
 				7F3D930025D4CC71002D3BE3 /* BaseView.swift in Sources */,
+				7F3D931725D4E2F3002D3BE3 /* BaseService.swift in Sources */,
 				7F3D92EA25D4CAEA002D3BE3 /* BaseViewController.swift in Sources */,
+				7F3D935225D51B5A002D3BE3 /* JobOrderService.swift in Sources */,
 				7F3D92F725D4CC21002D3BE3 /* LoginViewPresenter.swift in Sources */,
+				7F3D931B25D4E36E002D3BE3 /* CarryKeychain.swift in Sources */,
 				7F3D930325D4CC83002D3BE3 /* BasePresenterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,13 +560,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YRWDL64LRS;
+				DEVELOPMENT_TEAM = Y8HV6G3JRL;
 				INFOPLIST_FILE = JobOrderApp/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mariano.abigail.JobOrderApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -492,13 +581,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YRWDL64LRS;
+				DEVELOPMENT_TEAM = Y8HV6G3JRL;
 				INFOPLIST_FILE = JobOrderApp/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mariano.abigail.JobOrderApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

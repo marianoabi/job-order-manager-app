@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+@objc protocol BasePresenterView {
+    @objc optional func onLoadingStart()
+    @objc optional func onLoadingEnd()
+    @objc optional func onError(error: String)
+}
