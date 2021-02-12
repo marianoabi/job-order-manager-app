@@ -37,8 +37,8 @@ extension NewJobOrderPopupViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.presenter.getAllJobStatus()
-        self.presenter.getAllClients()
+//        self.presenter.getAllJobStatus()
+//        self.presenter.getAllClients()
     }
 }
 
