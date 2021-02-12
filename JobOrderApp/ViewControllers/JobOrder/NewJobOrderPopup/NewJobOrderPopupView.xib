@@ -68,8 +68,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQt-5Z-QOi">
-                                            <rect key="frame" x="47.666666666666671" y="8" width="238.33333333333331" height="34"/>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQt-5Z-QOi" customClass="TextFieldPrimary" customModule="JobOrderApp" customModuleProvider="target">
+                                            <rect key="frame" x="47.666666666666671" y="8" width="248.33333333333331" height="34"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -81,7 +81,7 @@
                                         <constraint firstItem="EQt-5Z-QOi" firstAttribute="leading" secondItem="8Qk-IR-uTg" secondAttribute="trailing" constant="10" id="UsN-0l-Z8C"/>
                                         <constraint firstAttribute="height" constant="50" id="cCD-Tu-1jk"/>
                                         <constraint firstItem="8Qk-IR-uTg" firstAttribute="leading" secondItem="AVW-mf-s1i" secondAttribute="leading" id="g9d-y9-Y1a"/>
-                                        <constraint firstAttribute="trailing" secondItem="EQt-5Z-QOi" secondAttribute="trailing" constant="10" id="svy-JE-p8R"/>
+                                        <constraint firstAttribute="trailing" secondItem="EQt-5Z-QOi" secondAttribute="trailing" id="svy-JE-p8R"/>
                                         <constraint firstItem="EQt-5Z-QOi" firstAttribute="centerY" secondItem="AVW-mf-s1i" secondAttribute="centerY" id="uo4-eH-3Oc"/>
                                     </constraints>
                                 </view>
@@ -91,7 +91,7 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="RKj-RW-uAP">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="RKj-RW-uAP" customClass="TextViewPrimary" customModule="JobOrderApp" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="86.333333333333314" width="296" height="120"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
@@ -110,7 +110,7 @@
                                 <constraint firstAttribute="trailing" secondItem="AVW-mf-s1i" secondAttribute="trailing" id="ycg-Jl-6ly"/>
                             </constraints>
                         </stackView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzr-Ot-tGO">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzr-Ot-tGO" customClass="ButtonPrimary" customModule="JobOrderApp" customModuleProvider="target">
                             <rect key="frame" x="104" y="288.33333333333337" width="120" height="40"/>
                             <color key="backgroundColor" name="primary"/>
                             <constraints>

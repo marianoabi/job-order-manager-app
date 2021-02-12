@@ -28,5 +28,6 @@ class Address: Mappable {
         city <- map["city"]
         state <- map["state"]
         postCode <- map["postcode"]
+        active <- map["active"]
     }
 }

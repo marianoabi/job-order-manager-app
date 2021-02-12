@@ -63,8 +63,8 @@ extension NewJobOrderPopupViewController: NewJobOrderPopupViewProtocol {
         
         jobOrder.jobAddress = address
         jobOrder.priority = 1
-        jobOrder.jobStatusID = 2121
-        jobOrder.clientID = 95878
+        jobOrder.jobStatusID = 2121 // Data got from getAllJobStatus API
+        jobOrder.clientID = 95878 // Data got from getAllClients API
         
         self.presenter.createNewJobOrder(jobOrder)
     }

@@ -38,6 +38,11 @@ extension JobOrderViewController {
         super.viewDidLoad()
 
         self.setupViews()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
         self.fetchAllJobOrders()
     }
 }

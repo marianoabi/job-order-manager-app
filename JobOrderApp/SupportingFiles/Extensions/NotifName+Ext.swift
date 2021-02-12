@@ -8,5 +8,5 @@
 import UIKit
 
 extension Notification.Name {
-    static let shouldGoToHomepage = Notification.Name(BeeClothing.NotificationName.shouldGoToHomepage)
+    static let shouldGoToHomepage = Notification.Name(JobOrderApp.NotificationName.shouldGoToHomepage)
 }
