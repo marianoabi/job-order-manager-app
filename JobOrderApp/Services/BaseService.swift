@@ -18,7 +18,7 @@ extension BaseService {
         
         return [
             "Content-type": "application/json",
-            "Authorization": accessToken
+            "Authorization": "Bearer \(accessToken)"
         ]
     }
     

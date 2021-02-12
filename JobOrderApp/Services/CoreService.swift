@@ -7,4 +7,6 @@
 
 import Foundation
 
-let baseURLString = "https://geoxqa-api.geo.ventures"
+struct CoreService {
+    static let baseURLString = "https://geoxqa-api.geo.ventures"
+}

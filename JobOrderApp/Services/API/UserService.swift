@@ -13,7 +13,7 @@ enum UserService {
 
 extension UserService: BaseService {
     var baseURL: URL {
-        return URL(string: "\(baseURLString)")!
+        return URL(string: "\(CoreService.baseURLString)")!
     }
     
     var path: String {
