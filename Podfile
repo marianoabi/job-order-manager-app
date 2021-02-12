@@ -7,7 +7,7 @@ target 'JobOrderApp' do
 
   # Pods for JobOrderApp
 
-pod 'Moya-ObjectMapper'
+pod 'Moya-ObjectMapper', '~> 2.9'
 pod 'SwiftKeychainWrapper'
 pod 'SwiftLint'
 

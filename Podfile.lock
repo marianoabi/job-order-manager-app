@@ -14,7 +14,7 @@ PODS:
   - SwiftLint (0.40.3)
 
 DEPENDENCIES:
-  - Moya-ObjectMapper
+  - Moya-ObjectMapper (~> 2.9)
   - SwiftKeychainWrapper
   - SwiftLint
 
@@ -35,6 +35,6 @@ SPEC CHECKSUMS:
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
 
-PODFILE CHECKSUM: 709a8e70335d99c086eb1b58c9e69a79976f4d05
+PODFILE CHECKSUM: 09f60211354186900496c55224d74a451e436f10
 
 COCOAPODS: 1.9.3
