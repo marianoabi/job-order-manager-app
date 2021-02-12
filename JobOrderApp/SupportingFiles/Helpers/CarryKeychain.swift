@@ -11,7 +11,7 @@ import SwiftKeychainWrapper
 // MARK: - Properties
 class MyKeychain {
     private static var accessToken = "accessToken"
-    private static var refreshToken = "accessToken"
+    private static var refreshToken = "refreshToken"
 }
 
 // MARK: - Methods
@@ -24,7 +24,7 @@ extension MyKeychain {
         guard let token = KeychainWrapper.standard.string(forKey: self.accessToken) else {
             return nil
         }
-        
+        print("AccessToken is \(token)")
         return token
     }
     

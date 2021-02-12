@@ -5,7 +5,8 @@
 //  Created by Abigail Mariano on 2/11/21.
 //
 
-import Moya
+import Foundation
+import Moya_ObjectMapper
 
 protocol LoginViewPresenterView: BasePresenterView {
     func successLogin(_ presenter: LoginViewPresenter)
@@ -26,15 +27,23 @@ class LoginViewPresenter {
 // MARK: - Functions
 extension LoginViewPresenter {
     func login(email: String, password: String) {
-        self.userProvider?.request(.login(email: email, password: password), completion: { [weak self] result in
+        self.userProvider?.request(.login(email: email, password: password), completion: { [weak self] (result) in
             guard let self = self else { return }
             
             switch result {
-            case let .success(response):
-                self.view?.onLoadingEnd?()
-//                if let authResponse = try? response.mapObject(AuthResponse.self) {
+            case .success(let response):
+                let authResponse = try? response.mapObject(AuthResponse.self)
+                if let aToken = authResponse?.accessToken, let rToken = authResponse?.refreshToken {
+                    print("Access token is \(aToken), refresh token is \(rToken)")
+                    
+                    MyKeychain.storeAccessToken(aToken)
+                    MyKeychain.storeRefreshToken(rToken)
+                    
                     self.view?.successLogin(self)
-//                }
+                    self.view?.onLoadingEnd?()
+                } else {
+                    print("No token found.....")
+                }
                 
             case let .failure(error):
                 self.view?.onLoadingEnd?()

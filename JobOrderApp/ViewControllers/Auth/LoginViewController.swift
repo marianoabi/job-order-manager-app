@@ -42,6 +42,8 @@ extension LoginViewController {
 extension LoginViewController {
     private func setupViews() {
         self.contentView?.delegate = self
+        
+        MyKeychain.removeAll()
     }
 }
 
@@ -49,7 +51,6 @@ extension LoginViewController {
 extension LoginViewController: LoginViewView {
     func loginButtonHandler(_ view: LoginView, email: String, password: String) {
         print("Did Tapped Login Button *****")
-        print("Email is \(email), password is \(password)")
         
         self.presenter.login(email: email, password: password)
     }
