@@ -26,7 +26,7 @@
 		7F3D930325D4CC83002D3BE3 /* BasePresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D930225D4CC83002D3BE3 /* BasePresenterView.swift */; };
 		7F3D930625D4D182002D3BE3 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3D930525D4D182002D3BE3 /* Auth.storyboard */; };
 		7F3D931725D4E2F3002D3BE3 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D931625D4E2F3002D3BE3 /* BaseService.swift */; };
-		7F3D931B25D4E36E002D3BE3 /* CarryKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D931A25D4E36E002D3BE3 /* CarryKeychain.swift */; };
+		7F3D931B25D4E36E002D3BE3 /* MyKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D931A25D4E36E002D3BE3 /* MyKeychain.swift */; };
 		7F3D932525D4E8A7002D3BE3 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D932425D4E8A7002D3BE3 /* UserService.swift */; };
 		7F3D932825D4E8CD002D3BE3 /* BaseMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D932725D4E8CD002D3BE3 /* BaseMoyaProvider.swift */; };
 		7F3D932B25D4E963002D3BE3 /* CoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D932A25D4E963002D3BE3 /* CoreService.swift */; };
@@ -48,6 +48,8 @@
 		7F9E470925D67A42008A94C5 /* NewJobOrderPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F9E470725D67A42008A94C5 /* NewJobOrderPopupView.xib */; };
 		7F9E470C25D68062008A94C5 /* NewJobOrderPopupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E470B25D68062008A94C5 /* NewJobOrderPopupPresenter.swift */; };
 		7F9E471025D6807B008A94C5 /* NewJobOrderPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E470F25D6807B008A94C5 /* NewJobOrderPopupView.swift */; };
+		7F9E471525D6BF56008A94C5 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E471425D6BF56008A94C5 /* String+Ext.swift */; };
+		7F9E471B25D6C353008A94C5 /* ViewWithBottomBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E471A25D6C353008A94C5 /* ViewWithBottomBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,7 +74,7 @@
 		7F3D930225D4CC83002D3BE3 /* BasePresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterView.swift; sourceTree = "<group>"; };
 		7F3D930525D4D182002D3BE3 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		7F3D931625D4E2F3002D3BE3 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
-		7F3D931A25D4E36E002D3BE3 /* CarryKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarryKeychain.swift; sourceTree = "<group>"; };
+		7F3D931A25D4E36E002D3BE3 /* MyKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKeychain.swift; sourceTree = "<group>"; };
 		7F3D932425D4E8A7002D3BE3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		7F3D932725D4E8CD002D3BE3 /* BaseMoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMoyaProvider.swift; sourceTree = "<group>"; };
 		7F3D932A25D4E963002D3BE3 /* CoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreService.swift; sourceTree = "<group>"; };
@@ -94,6 +96,8 @@
 		7F9E470725D67A42008A94C5 /* NewJobOrderPopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewJobOrderPopupView.xib; sourceTree = "<group>"; };
 		7F9E470B25D68062008A94C5 /* NewJobOrderPopupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJobOrderPopupPresenter.swift; sourceTree = "<group>"; };
 		7F9E470F25D6807B008A94C5 /* NewJobOrderPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJobOrderPopupView.swift; sourceTree = "<group>"; };
+		7F9E471425D6BF56008A94C5 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		7F9E471A25D6C353008A94C5 /* ViewWithBottomBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWithBottomBorder.swift; sourceTree = "<group>"; };
 		8CE8019D3B7A1E2C14528A56 /* Pods_JobOrderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobOrderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F271A1700437292050679D07 /* Pods-JobOrderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobOrderApp.debug.xcconfig"; path = "Target Support Files/Pods-JobOrderApp/Pods-JobOrderApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,9 +197,8 @@
 		7F3D92D225D4C71A002D3BE3 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				7F3D934D25D51999002D3BE3 /* Constants */,
+				7F9E471725D6C260008A94C5 /* Utilities */,
 				7F3D934925D5195A002D3BE3 /* Extensions */,
-				7F3D931925D4E35E002D3BE3 /* Helpers */,
 				7F3D92C225D4C6C2002D3BE3 /* Assets.xcassets */,
 				7F3D92C725D4C6C2002D3BE3 /* Info.plist */,
 				7F3D92C425D4C6C2002D3BE3 /* LaunchScreen.storyboard */,
@@ -250,7 +253,7 @@
 		7F3D931925D4E35E002D3BE3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				7F3D931A25D4E36E002D3BE3 /* CarryKeychain.swift */,
+				7F3D931A25D4E36E002D3BE3 /* MyKeychain.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			children = (
 				7F3D934A25D5196F002D3BE3 /* NotifName+Ext.swift */,
 				7F9E46F225D653F8008A94C5 /* UIView+Ext.swift */,
+				7F9E471425D6BF56008A94C5 /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -326,6 +330,24 @@
 				7F9E470725D67A42008A94C5 /* NewJobOrderPopupView.xib */,
 			);
 			path = NewJobOrderPopup;
+			sourceTree = "<group>";
+		};
+		7F9E471725D6C260008A94C5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7F9E471925D6C2E9008A94C5 /* Views */,
+				7F3D934D25D51999002D3BE3 /* Constants */,
+				7F3D931925D4E35E002D3BE3 /* Helpers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7F9E471925D6C2E9008A94C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F9E471A25D6C353008A94C5 /* ViewWithBottomBorder.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D0E8FA06B8D74B9B2A291F78 /* Pods */ = {
@@ -477,6 +499,7 @@
 				7F3D92DB25D4C816002D3BE3 /* JobOrderPresenter.swift in Sources */,
 				7F3D92BA25D4C6C0002D3BE3 /* AppDelegate.swift in Sources */,
 				7F9E46E725D64B66008A94C5 /* JobStatus.swift in Sources */,
+				7F9E471525D6BF56008A94C5 /* String+Ext.swift in Sources */,
 				7F3D92BC25D4C6C0002D3BE3 /* SceneDelegate.swift in Sources */,
 				7F9E46E425D62DF4008A94C5 /* Address.swift in Sources */,
 				7F3D936F25D52BCD002D3BE3 /* JobOrderTableViewCell.swift in Sources */,
@@ -484,9 +507,10 @@
 				7F9E470825D67A42008A94C5 /* NewJobOrderPopupViewController.swift in Sources */,
 				7F3D931725D4E2F3002D3BE3 /* BaseService.swift in Sources */,
 				7F3D92EA25D4CAEA002D3BE3 /* BaseViewController.swift in Sources */,
+				7F9E471B25D6C353008A94C5 /* ViewWithBottomBorder.swift in Sources */,
 				7F3D935225D51B5A002D3BE3 /* JobOrderService.swift in Sources */,
 				7F3D92F725D4CC21002D3BE3 /* LoginViewPresenter.swift in Sources */,
-				7F3D931B25D4E36E002D3BE3 /* CarryKeychain.swift in Sources */,
+				7F3D931B25D4E36E002D3BE3 /* MyKeychain.swift in Sources */,
 				7F3D930325D4CC83002D3BE3 /* BasePresenterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
