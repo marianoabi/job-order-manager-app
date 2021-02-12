@@ -9,4 +9,5 @@ import UIKit
 
 class JobOrderView: UIView {
     
+    @IBOutlet weak var jobOrderTableView: UITableView!
 }
