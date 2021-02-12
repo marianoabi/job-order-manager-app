@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,20 +31,52 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7s-uu-Nra">
-                    <rect key="frame" x="16" y="150" width="382" height="24"/>
+                    <rect key="frame" x="16" y="150" width="110" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="bfw-2r-FzE"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDv-53-dQs">
+                    <rect key="frame" x="136" y="137" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="GVA-Kx-aC0"/>
+                        <constraint firstAttribute="width" constant="50" id="fnN-86-xIt"/>
+                    </constraints>
+                    <color key="tintColor" name="content"/>
+                    <state key="normal" image="plus" catalog="system"/>
+                    <connections>
+                        <action selector="didTappedCreateButton:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="q3r-S4-Fl8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDD-Kb-o9p">
+                    <rect key="frame" x="338" y="139" width="60" height="40"/>
+                    <color key="backgroundColor" name="content"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="N6R-aA-mDS"/>
+                        <constraint firstAttribute="width" constant="60" id="l6w-PE-Vle"/>
+                    </constraints>
+                    <state key="normal" title="Logout">
+                        <color key="titleColor" name="primary"/>
+                    </state>
+                    <connections>
+                        <action selector="didTappedLogoutButton:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="kD7-BF-6L6"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="o1g-pw-VmI" firstAttribute="top" secondItem="pDD-Kb-o9p" secondAttribute="bottom" constant="15" id="0Jx-bd-rvo"/>
                 <constraint firstItem="o1g-pw-VmI" firstAttribute="top" secondItem="F7s-uu-Nra" secondAttribute="bottom" constant="20" id="2PB-yW-IR0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pDD-Kb-o9p" secondAttribute="trailing" constant="16" id="AZJ-hc-Wlq"/>
+                <constraint firstItem="lDv-53-dQs" firstAttribute="centerY" secondItem="F7s-uu-Nra" secondAttribute="centerY" id="Iva-wh-maI"/>
                 <constraint firstItem="UFb-82-M9v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Z0J-jw-kJg"/>
+                <constraint firstItem="lDv-53-dQs" firstAttribute="leading" secondItem="F7s-uu-Nra" secondAttribute="trailing" constant="10" id="a8v-Z3-btn"/>
                 <constraint firstItem="F7s-uu-Nra" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="cby-Kt-42o"/>
                 <constraint firstItem="F7s-uu-Nra" firstAttribute="top" secondItem="UFb-82-M9v" secondAttribute="bottom" id="eyx-OQ-eGJ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F7s-uu-Nra" secondAttribute="trailing" constant="16" id="gML-j8-Sjr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o1g-pw-VmI" secondAttribute="trailing" id="nhi-xp-8Yo"/>
                 <constraint firstItem="UFb-82-M9v" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pHI-EX-eSl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="o1g-pw-VmI" secondAttribute="bottom" id="qYH-oY-adC"/>
@@ -58,6 +91,13 @@
     </objects>
     <resources>
         <image name="icBanner" width="626" height="225"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="content">
+            <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="1" green="0.7686274509803922" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

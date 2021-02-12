@@ -49,7 +49,7 @@ class JobOrderTableViewCell: UITableViewCell {
         
         
         if let jobAddress = jobOrder.jobAddress {
-            self.addressLabel.text = "\(jobAddress.address ?? "") \(jobAddress.city ?? "") \(jobAddress.state ?? "") \(jobAddress.postCode ?? "")"
+            self.addressLabel.text = "\(jobAddress.address1 ?? "") \(jobAddress.city ?? "") \(jobAddress.state ?? "") \(jobAddress.postCode ?? "")"
         }
         
         self.descriptionLabel.text = jobOrder.description

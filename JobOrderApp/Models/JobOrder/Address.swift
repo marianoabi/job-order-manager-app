@@ -7,16 +7,24 @@
 
 import ObjectMapper
 
-struct Address: Mappable {
-    var address: String?
+class Address: Mappable {
+    var address1: String?
     var city: String?
     var state: String?
     var postCode: String?
     
-    init?(map: Map) { }
+    var address2: String?
+    var country: String?
+    var longitude: String?
+    var latitude: String?
+    var active: Bool? = false
     
-    mutating func mapping(map: Map) {
-        address <- map["address1"]
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    func mapping(map: Map) {
+        address1 <- map["address1"]
         city <- map["city"]
         state <- map["state"]
         postCode <- map["postcode"]

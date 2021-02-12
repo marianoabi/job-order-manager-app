@@ -25,6 +25,21 @@
             </objects>
             <point key="canvasLocation" x="713.04347826086962" y="93.75"/>
         </scene>
+        <!--New Job Order Popup View Controller-->
+        <scene sceneID="7QC-NM-kwI">
+            <objects>
+                <viewController storyboardIdentifier="NewJobOrderPopupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r50-w1-qLk" customClass="NewJobOrderPopupViewController" customModule="JobOrderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a3r-pX-46S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8a6-n5-rDy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRN-Gw-ps9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1645" y="94"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4fR-yf-6Bf">
             <objects>

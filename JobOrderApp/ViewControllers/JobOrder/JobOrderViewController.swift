@@ -45,11 +45,11 @@ extension JobOrderViewController {
 // MARK: - Methods
 extension JobOrderViewController {
     private func setupViews() {
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        
         self.contentView?.jobOrderTableView.register(UINib(nibName: "JobOrderTableViewCell", bundle: nil), forCellReuseIdentifier: "JobOrderTableViewCell")
         self.contentView?.jobOrderTableView.delegate = self
         self.contentView?.jobOrderTableView.dataSource = self
+        
+        self.contentView?.delegate = self
     }
     
     private func fetchAllJobOrders() {
@@ -96,5 +96,17 @@ extension JobOrderViewController: JobOrderPresenterView {
     
     func failFetchJobOrders(_ presenter: JobOrderPresenter) {
         print("Fail fetch job orders.....")
+    }
+}
+
+extension JobOrderViewController: JobOrderViewProtocol {
+    func createButtonHandler(_ view: JobOrderView) {
+        print("Did tapped create button.....")
+
+        self.goToNewJobOrderPopup(self)
+    }
+    
+    func logoutButtonHandler(_ view: JobOrderView) {
+        print("Did logout.....")
     }
 }

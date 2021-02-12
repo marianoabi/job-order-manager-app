@@ -39,5 +39,11 @@ class BaseViewController: UIViewController {
 
 // MARK: - Navigation Functions
 extension BaseViewController {
-    
+    func goToNewJobOrderPopup(_ viewController: UIViewController) {
+        if let viewController = UIStoryboard(name: "JobOrder", bundle: nil).instantiateViewController(withIdentifier: "NewJobOrderPopupViewController") as? NewJobOrderPopupViewController {
+            viewController.modalTransitionStyle = .crossDissolve
+            viewController.modalPresentationStyle = .overFullScreen
+            present(viewController, animated: true, completion: nil)
+        }
+    }
 }

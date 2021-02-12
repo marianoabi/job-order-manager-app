@@ -44,6 +44,10 @@
 		7F9E46E425D62DF4008A94C5 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E46E325D62DF4008A94C5 /* Address.swift */; };
 		7F9E46E725D64B66008A94C5 /* JobStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E46E625D64B66008A94C5 /* JobStatus.swift */; };
 		7F9E46F325D653F8008A94C5 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E46F225D653F8008A94C5 /* UIView+Ext.swift */; };
+		7F9E470825D67A42008A94C5 /* NewJobOrderPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E470625D67A42008A94C5 /* NewJobOrderPopupViewController.swift */; };
+		7F9E470925D67A42008A94C5 /* NewJobOrderPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F9E470725D67A42008A94C5 /* NewJobOrderPopupView.xib */; };
+		7F9E470C25D68062008A94C5 /* NewJobOrderPopupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E470B25D68062008A94C5 /* NewJobOrderPopupPresenter.swift */; };
+		7F9E471025D6807B008A94C5 /* NewJobOrderPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E470F25D6807B008A94C5 /* NewJobOrderPopupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +90,10 @@
 		7F9E46E325D62DF4008A94C5 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		7F9E46E625D64B66008A94C5 /* JobStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobStatus.swift; sourceTree = "<group>"; };
 		7F9E46F225D653F8008A94C5 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		7F9E470625D67A42008A94C5 /* NewJobOrderPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJobOrderPopupViewController.swift; sourceTree = "<group>"; };
+		7F9E470725D67A42008A94C5 /* NewJobOrderPopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewJobOrderPopupView.xib; sourceTree = "<group>"; };
+		7F9E470B25D68062008A94C5 /* NewJobOrderPopupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJobOrderPopupPresenter.swift; sourceTree = "<group>"; };
+		7F9E470F25D6807B008A94C5 /* NewJobOrderPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJobOrderPopupView.swift; sourceTree = "<group>"; };
 		8CE8019D3B7A1E2C14528A56 /* Pods_JobOrderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobOrderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F271A1700437292050679D07 /* Pods-JobOrderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobOrderApp.debug.xcconfig"; path = "Target Support Files/Pods-JobOrderApp/Pods-JobOrderApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,9 +139,8 @@
 		7F3D92B825D4C6C0002D3BE3 /* JobOrderApp */ = {
 			isa = PBXGroup;
 			children = (
-				7F9E46FC25D663EE008A94C5 /* Shared */,
-				7F3D92E825D4CADB002D3BE3 /* Base */,
 				7F3D92D125D4C6F1002D3BE3 /* App */,
+				7F3D92E825D4CADB002D3BE3 /* Base */,
 				7F3D92D025D4C6DB002D3BE3 /* Models */,
 				7F3D92CF25D4C6D1002D3BE3 /* ViewControllers */,
 				7F3D92CE25D4C6C9002D3BE3 /* Services */,
@@ -158,6 +165,7 @@
 		7F3D92CF25D4C6D1002D3BE3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7F9E46FC25D663EE008A94C5 /* Shared */,
 				7F3D92EF25D4CBFC002D3BE3 /* Auth */,
 				7F3D92ED25D4CBD8002D3BE3 /* JobOrder */,
 			);
@@ -218,6 +226,7 @@
 		7F3D92ED25D4CBD8002D3BE3 /* JobOrder */ = {
 			isa = PBXGroup;
 			children = (
+				7F9E470525D67908008A94C5 /* NewJobOrderPopup */,
 				7F3D936C25D52B93002D3BE3 /* TableViewCell */,
 				7F3D92D425D4C7DC002D3BE3 /* JobOrderViewController.swift */,
 				7F3D92DA25D4C816002D3BE3 /* JobOrderPresenter.swift */,
@@ -308,6 +317,17 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		7F9E470525D67908008A94C5 /* NewJobOrderPopup */ = {
+			isa = PBXGroup;
+			children = (
+				7F9E470625D67A42008A94C5 /* NewJobOrderPopupViewController.swift */,
+				7F9E470B25D68062008A94C5 /* NewJobOrderPopupPresenter.swift */,
+				7F9E470F25D6807B008A94C5 /* NewJobOrderPopupView.swift */,
+				7F9E470725D67A42008A94C5 /* NewJobOrderPopupView.xib */,
+			);
+			path = NewJobOrderPopup;
+			sourceTree = "<group>";
+		};
 		D0E8FA06B8D74B9B2A291F78 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +399,7 @@
 				7F3D930625D4D182002D3BE3 /* Auth.storyboard in Resources */,
 				7F3D92F325D4CC0C002D3BE3 /* LoginView.xib in Resources */,
 				7F3D92C625D4C6C2002D3BE3 /* LaunchScreen.storyboard in Resources */,
+				7F9E470925D67A42008A94C5 /* NewJobOrderPopupView.xib in Resources */,
 				7F3D937025D52BCD002D3BE3 /* JobOrderTableViewCell.xib in Resources */,
 				7F3D92D725D4C7DC002D3BE3 /* JobOrderView.xib in Resources */,
 				7F3D92C325D4C6C2002D3BE3 /* Assets.xcassets in Resources */,
@@ -435,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9E470C25D68062008A94C5 /* NewJobOrderPopupPresenter.swift in Sources */,
 				7F3D932525D4E8A7002D3BE3 /* UserService.swift in Sources */,
 				7F3D934B25D5196F002D3BE3 /* NotifName+Ext.swift in Sources */,
 				7F3D92F225D4CC0C002D3BE3 /* LoginViewController.swift in Sources */,
@@ -446,6 +468,7 @@
 				7F3D933D25D4FFF5002D3BE3 /* AuthResponse.swift in Sources */,
 				7F3D934025D50296002D3BE3 /* BaseResponse.swift in Sources */,
 				7F3D932825D4E8CD002D3BE3 /* BaseMoyaProvider.swift in Sources */,
+				7F9E471025D6807B008A94C5 /* NewJobOrderPopupView.swift in Sources */,
 				7F3D92D625D4C7DC002D3BE3 /* JobOrderViewController.swift in Sources */,
 				7F3D92FB25D4CC2A002D3BE3 /* LoginView.swift in Sources */,
 				7F9E46DE25D6231C008A94C5 /* JobOrder.swift in Sources */,
@@ -458,6 +481,7 @@
 				7F9E46E425D62DF4008A94C5 /* Address.swift in Sources */,
 				7F3D936F25D52BCD002D3BE3 /* JobOrderTableViewCell.swift in Sources */,
 				7F3D930025D4CC71002D3BE3 /* BaseView.swift in Sources */,
+				7F9E470825D67A42008A94C5 /* NewJobOrderPopupViewController.swift in Sources */,
 				7F3D931725D4E2F3002D3BE3 /* BaseService.swift in Sources */,
 				7F3D92EA25D4CAEA002D3BE3 /* BaseViewController.swift in Sources */,
 				7F3D935225D51B5A002D3BE3 /* JobOrderService.swift in Sources */,
