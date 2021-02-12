@@ -52,17 +52,12 @@ class JobOrderTableViewCell: UITableViewCell {
             self.addressLabel.text = "\(jobAddress.address1 ?? "") \(jobAddress.city ?? "") \(jobAddress.state ?? "") \(jobAddress.postCode ?? "")"
         }
         
-        self.descriptionLabel.text = jobOrder.description
+        if let desc = jobOrder.description {
+            self.descriptionLabel.text = desc.htmlAttributedString?.string
+        }
+        
+        self.wrapperView.addShadow()
     }
-    
-//    private func getClientNames(clients: [Client]) -> String {
-//        var clientsArray = [String]()
-//        for client in clients {
-//            clientsArray.append("\(client.firstName ?? "") \(client.lastName ?? "")")
-//            clientsArray.append("\(client.firstName ?? "") \(client.lastName ?? "")")
-//        }
-//        return clientsArray.joined(separator: ", ")
-//    }
     
     private func setupJobStatus(_ status: JobStatus) {
         self.statusLabel.text = status.name
