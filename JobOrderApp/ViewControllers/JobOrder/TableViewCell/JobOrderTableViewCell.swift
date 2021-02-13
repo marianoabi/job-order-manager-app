@@ -7,7 +7,7 @@
 
 import UIKit
 
-class JobOrderTableViewCell: UITableViewCell {
+class JobOrderTableViewCell: BaseTableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!

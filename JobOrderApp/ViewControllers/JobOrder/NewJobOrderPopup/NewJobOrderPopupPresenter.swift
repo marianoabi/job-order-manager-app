@@ -27,7 +27,8 @@ class NewJobOrderPopupPresenter {
 extension NewJobOrderPopupPresenter {
     func createNewJobOrder(_ newJobOrder: JobOrder) {
         self.view?.onLoadingStart?()
-        self.jobOrderProvider?.request(.createJobOrder(jobOrder: newJobOrder), completion: { result in
+        self.jobOrderProvider?.request(.createJobOrder(jobOrder: newJobOrder), completion: { [weak self] result in
+            guard let self = self else { return }
             
             switch result {
             case let .success(response):
@@ -76,7 +77,8 @@ extension NewJobOrderPopupPresenter {
     
     func getAllJobStatus() {
         self.view?.onLoadingStart?()
-        self.jobOrderProvider?.request(.getAllJobStatus, completion: { result in
+        self.jobOrderProvider?.request(.getAllJobStatus, completion: { [weak self] result in
+            guard let self = self else { return }
             
             switch result {
             case .success:
@@ -92,7 +94,8 @@ extension NewJobOrderPopupPresenter {
     
     func getAllClients() {
         self.view?.onLoadingStart?()
-        self.jobOrderProvider?.request(.getAllClients, completion: { result in
+        self.jobOrderProvider?.request(.getAllClients, completion: { [weak self] result in
+            guard let self = self else { return }
             
             switch result {
             case .success:

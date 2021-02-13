@@ -47,6 +47,10 @@ class BaseViewController: UIViewController {
          self.view.frame.origin.y = 0
     }
     
+    func typeName(_ some: Any) -> String {
+        return (some is Any.Type) ? "\(some)" : "\(type(of: some))"
+    }
+    
     deinit {
         print("Deallocated - \(self)")
         self.removeKeyboardObservers()
@@ -56,7 +60,7 @@ class BaseViewController: UIViewController {
 // MARK: - Navigation Functions
 extension BaseViewController {
     func goToNewJobOrderPopup(_ viewController: UIViewController, delegate: NewJobOrderPopupViewControllerProtocol) {
-        if let viewController = UIStoryboard(name: "JobOrder", bundle: nil).instantiateViewController(withIdentifier: "NewJobOrderPopupViewController") as? NewJobOrderPopupViewController {
+        if let viewController = UIStoryboard(name: JobOrderApp.Storyboard.jobOrder, bundle: nil).instantiateViewController(withIdentifier: "NewJobOrderPopupViewController") as? NewJobOrderPopupViewController {
             viewController.delegate = delegate
             viewController.modalTransitionStyle = .crossDissolve
             viewController.modalPresentationStyle = .overFullScreen

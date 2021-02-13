@@ -33,15 +33,20 @@ struct JobOrderApp {
     }
     
     struct Storyboard {
-        
+        static let auth = "Auth"
+        static let jobOrder = "JobOrder"
     }
     
     struct ViewController {
-        
+        static let loginViewController = "LoginViewController"
+        static let jobOrderViewController = "JobOrderViewController"
+        static let newJobOrderPopupViewController = "NewJobOrderPopupViewController"
     }
     
     struct Nib {
-        
+        static let loginView = "LoginView"
+        static let jobOrderView = "JobOrderView"
+        static let newJobOrderPopupView = "NewJobOrderPopupView"
     }
     
     struct Font {

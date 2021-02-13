@@ -50,7 +50,7 @@ extension JobOrderViewController {
 // MARK: - Methods
 extension JobOrderViewController {
     private func setupViews() {
-        self.contentView?.jobOrderTableView.register(UINib(nibName: "JobOrderTableViewCell", bundle: nil), forCellReuseIdentifier: "JobOrderTableViewCell")
+        self.contentView?.jobOrderTableView.register(JobOrderTableViewCell().convertToNib(), forCellReuseIdentifier: JobOrderTableViewCell().identifier)
         self.contentView?.jobOrderTableView.delegate = self
         self.contentView?.jobOrderTableView.dataSource = self
         
@@ -92,7 +92,7 @@ extension JobOrderViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "JobOrderTableViewCell", for: indexPath) as? JobOrderTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: JobOrderTableViewCell().identifier, for: indexPath) as? JobOrderTableViewCell
         
         if let jobOrder = self.jobOrders?[indexPath.row] {
             cell?.updateData(with: jobOrder)

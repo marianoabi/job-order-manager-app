@@ -41,11 +41,14 @@ extension LoginViewPresenter {
                     
                     if let aToken = authResponse.accessToken, let rToken = authResponse.refreshToken {
                         
+                        //Store token
                         MyKeychain.storeAccessToken(aToken)
                         MyKeychain.storeRefreshToken(rToken)
                         
                         self.view?.successLogin(self)
+                        
                     } else {
+                        
                         self.view?.onError?(error: JobOrderApp.ErrorMessage.byDefault)
                     }
                     
@@ -65,8 +68,8 @@ extension LoginViewPresenter {
                                     self.view?.onError?(error: data.message ?? JobOrderApp.ErrorMessage.byDefault)
                                 }
                             }
-                            
                         } catch {
+                            
                             self.view?.onError?(error: JobOrderApp.ErrorMessage.byDefault)
                             
                         }

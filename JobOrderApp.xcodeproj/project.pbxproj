@@ -60,6 +60,7 @@
 		7FC451AB25D7FCB200ECCDF7 /* LabelPrimaryRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC451AA25D7FCB200ECCDF7 /* LabelPrimaryRegular.swift */; };
 		7FC451AE25D7FCEA00ECCDF7 /* LabelPrimaryBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC451AD25D7FCEA00ECCDF7 /* LabelPrimaryBold.swift */; };
 		7FC451B125D805A900ECCDF7 /* LabelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC451B025D805A900ECCDF7 /* LabelError.swift */; };
+		7FC451B825D8213600ECCDF7 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC451B725D8213600ECCDF7 /* BaseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +119,7 @@
 		7FC451AA25D7FCB200ECCDF7 /* LabelPrimaryRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelPrimaryRegular.swift; sourceTree = "<group>"; };
 		7FC451AD25D7FCEA00ECCDF7 /* LabelPrimaryBold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelPrimaryBold.swift; sourceTree = "<group>"; };
 		7FC451B025D805A900ECCDF7 /* LabelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelError.swift; sourceTree = "<group>"; };
+		7FC451B725D8213600ECCDF7 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		8CE8019D3B7A1E2C14528A56 /* Pods_JobOrderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobOrderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F271A1700437292050679D07 /* Pods-JobOrderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobOrderApp.debug.xcconfig"; path = "Target Support Files/Pods-JobOrderApp/Pods-JobOrderApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,6 +243,7 @@
 				7F3D92FF25D4CC71002D3BE3 /* BaseView.swift */,
 				7F3D930225D4CC83002D3BE3 /* BasePresenterView.swift */,
 				7F1B12B425D7C8A400CF0131 /* BaseErrorResponse.swift */,
+				7FC451B725D8213600ECCDF7 /* BaseTableViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				7F9E470C25D68062008A94C5 /* NewJobOrderPopupPresenter.swift in Sources */,
 				7FC451AB25D7FCB200ECCDF7 /* LabelPrimaryRegular.swift in Sources */,
 				7F3D932525D4E8A7002D3BE3 /* UserService.swift in Sources */,
+				7FC451B825D8213600ECCDF7 /* BaseTableViewCell.swift in Sources */,
 				7F3D934B25D5196F002D3BE3 /* NotifName+Ext.swift in Sources */,
 				7F9E472C25D6E679008A94C5 /* ButtonPrimary.swift in Sources */,
 				7F3D92F225D4CC0C002D3BE3 /* LoginViewController.swift in Sources */,
