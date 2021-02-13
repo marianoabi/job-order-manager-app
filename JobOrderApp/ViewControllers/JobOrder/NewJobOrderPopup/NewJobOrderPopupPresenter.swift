@@ -69,7 +69,6 @@ extension NewJobOrderPopupPresenter {
                 
             case let .failure(error):
                 self.view?.onError?(error: error.errorDescription ?? JobOrderApp.ErrorMessage.byDefault)
-                self.view?.failCreateNewJobOrder(self)
                 self.view?.onLoadingEnd?()
             }
         })
@@ -86,7 +85,6 @@ extension NewJobOrderPopupPresenter {
                 
             case let .failure(error):
                 self.view?.onError?(error: error.errorDescription ?? JobOrderApp.ErrorMessage.byDefault)
-            self.view?.failGetAllJobStatus(self)
             self.view?.onLoadingEnd?()
             }
         })
@@ -103,7 +101,6 @@ extension NewJobOrderPopupPresenter {
                 
             case let .failure(error):
             self.view?.onError?(error: error.errorDescription ?? JobOrderApp.ErrorMessage.byDefault)
-            self.view?.failGetAllClients(self)
             self.view?.onLoadingEnd?()
             }
         })

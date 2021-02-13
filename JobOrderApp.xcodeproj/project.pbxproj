@@ -173,7 +173,6 @@
 		7F3D92CF25D4C6D1002D3BE3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7F9E46FC25D663EE008A94C5 /* Shared */,
 				7F3D92EF25D4CBFC002D3BE3 /* Auth */,
 				7F3D92ED25D4CBD8002D3BE3 /* JobOrder */,
 			);
@@ -315,13 +314,6 @@
 				7F9E46E625D64B66008A94C5 /* JobStatus.swift */,
 			);
 			path = JobOrder;
-			sourceTree = "<group>";
-		};
-		7F9E46FC25D663EE008A94C5 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		7F9E470525D67908008A94C5 /* NewJobOrderPopup */ = {

@@ -79,7 +79,6 @@ extension LoginViewPresenter {
             case let .failure(error):
                 self.view?.onLoadingEnd?()
                 self.view?.onError?(error: error.errorDescription ?? JobOrderApp.ErrorMessage.byDefault)
-                self.view?.failLogin(self)
             }
         })
     }

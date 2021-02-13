@@ -69,7 +69,6 @@ extension JobOrderPresenter {
             case let .failure(error):
                 self.view?.onLoadingEnd?()
                 self.view?.onError?(error: error.errorDescription ?? JobOrderApp.ErrorMessage.byDefault)
-                self.view?.failFetchJobOrders(self)
             }
         })
     }
