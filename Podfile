@@ -10,5 +10,6 @@ target 'JobOrderApp' do
 pod 'Moya-ObjectMapper', '~> 2.9'
 pod 'SwiftKeychainWrapper'
 pod 'SwiftLint'
+pod 'MBProgressHUD', '~> 1.2.0'
 
 end

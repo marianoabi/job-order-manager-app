@@ -6,14 +6,12 @@
 //
 
 import Moya_ObjectMapper
+import Moya
 
 protocol NewJobOrderPopupPresenterView: BasePresenterView {
     func successCreateNewJobOrder(_ presenter: NewJobOrderPopupPresenter)
-    func failCreateNewJobOrder(_ presenter: NewJobOrderPopupPresenter)
     func successGetAllJobStatus(_ presenter: NewJobOrderPopupPresenter)
-    func failGetAllJobStatus(_ presenter: NewJobOrderPopupPresenter)
     func successGetAllClients(_ presenter: NewJobOrderPopupPresenter)
-    func failGetAllClients(_ presenter: NewJobOrderPopupPresenter)
 }
 
 class NewJobOrderPopupPresenter {
@@ -33,13 +31,44 @@ extension NewJobOrderPopupPresenter {
             
             switch result {
             case let .success(response):
-                print("Success New Job \(response)")
-                self.view?.successCreateNewJobOrder(self)
                 self.view?.onLoadingEnd?()
+            
+                do {
+                    _ = try response.filterSuccessfulStatusCodes()
+                    let _ = try? response.mapObject(JobOrder.self)
+                    
+                    self.view?.successCreateNewJobOrder(self)
+
+                } catch(let error) {
+
+                    if let error = error as? MoyaError {
+                        do {
+                            if let data = try error.response?.mapObject(BaseErrorResponse.self) {
+                                
+                                if let description = data.errorDescription {
+                                    self.view?.onError?(error: description)
+
+                                } else if let message = data.message {
+                                    self.view?.onError?(error: message)
+
+                                } else {
+                                    self.view?.onError?(error: data.message ?? JobOrderApp.ErrorMessage.byDefault)
+                                }
+                            }
+                            
+                        } catch {
+                            self.view?.onError?(error: JobOrderApp.ErrorMessage.byDefault)
+                            
+                        }
+                        
+                    } else {
+                        
+                        self.view?.onError?(error: JobOrderApp.ErrorMessage.byDefault)
+                    }
+                }
                 
             case let .failure(error):
-                self.view?.onError?(error: error.errorDescription ?? "An error ocurred.")
-                self.view?.failCreateNewJobOrder(self)
+                self.view?.onError?(error: error.errorDescription ?? JobOrderApp.ErrorMessage.byDefault)
                 self.view?.onLoadingEnd?()
             }
         })
@@ -50,14 +79,12 @@ extension NewJobOrderPopupPresenter {
         self.jobOrderProvider?.request(.getAllJobStatus, completion: { result in
             
             switch result {
-            case let .success(response):
-                print("getAllJobStatus response: \(response)")
+            case .success:
                 self.view?.successCreateNewJobOrder(self)
                 self.view?.onLoadingEnd?()
                 
             case let .failure(error):
-            self.view?.onError?(error: error.errorDescription ?? "An error ocurred.")
-            self.view?.failGetAllJobStatus(self)
+                self.view?.onError?(error: error.errorDescription ?? JobOrderApp.ErrorMessage.byDefault)
             self.view?.onLoadingEnd?()
             }
         })
@@ -68,14 +95,12 @@ extension NewJobOrderPopupPresenter {
         self.jobOrderProvider?.request(.getAllClients, completion: { result in
             
             switch result {
-            case let .success(response):
-                print("getAllClients response: \(response)")
+            case .success:
                 self.view?.successGetAllClients(self)
                 self.view?.onLoadingEnd?()
                 
             case let .failure(error):
-            self.view?.onError?(error: error.errorDescription ?? "An error ocurred.")
-            self.view?.failGetAllClients(self)
+            self.view?.onError?(error: error.errorDescription ?? JobOrderApp.ErrorMessage.byDefault)
             self.view?.onLoadingEnd?()
             }
         })

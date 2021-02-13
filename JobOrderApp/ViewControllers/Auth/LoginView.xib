@@ -30,20 +30,26 @@
                     <rect key="frame" x="50" y="64" width="314" height="269"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RVR-69-Ibx">
-                    <rect key="frame" x="50" y="416" width="314" height="118"/>
+                    <rect key="frame" x="50" y="416" width="314" height="141.5"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="marianoabby@gmail.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DeL-9C-bIh">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="marianoabby@gmail.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DeL-9C-bIh" customClass="TextFieldPrimary" customModule="JobOrderApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" textContentType="email"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1123@abc#" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXy-Ls-Q6S">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1123@abc#" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXy-Ls-Q6S" customClass="TextFieldPrimary" customModule="JobOrderApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="44" width="314" height="34"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0g-LR-Ne1">
-                            <rect key="frame" x="0.0" y="88" width="314" height="30"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An error ocurred." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80E-V4-LYd">
+                            <rect key="frame" x="0.0" y="88" width="314" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" name="error"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0g-LR-Ne1" customClass="ButtonPrimary" customModule="JobOrderApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="111.5" width="314" height="30"/>
                             <color key="backgroundColor" name="primary"/>
                             <state key="normal" title="Login">
                                 <color key="titleColor" name="content"/>
@@ -70,6 +76,7 @@
             </constraints>
             <connections>
                 <outlet property="emailTextField" destination="DeL-9C-bIh" id="TKu-ws-i59"/>
+                <outlet property="errorMessageLabel" destination="80E-V4-LYd" id="wwB-jC-69t"/>
                 <outlet property="passwordTextField" destination="DXy-Ls-Q6S" id="1rp-UT-yIF"/>
             </connections>
             <point key="canvasLocation" x="-197.10144927536234" y="84.375"/>
@@ -79,6 +86,9 @@
         <image name="icLogo" width="800" height="800"/>
         <namedColor name="content">
             <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="error">
+            <color red="0.98431372549019602" green="0.10196078431372549" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primary">
             <color red="1" green="0.7686274509803922" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

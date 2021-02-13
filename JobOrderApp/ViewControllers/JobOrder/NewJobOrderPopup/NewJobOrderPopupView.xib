@@ -22,13 +22,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlQ-1U-SRC">
-                    <rect key="frame" x="50" y="293" width="328" height="350"/>
+                    <rect key="frame" x="50" y="291.33333333333326" width="328" height="353.66666666666674"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqw-zU-FRL">
                             <rect key="frame" x="0.0" y="0.0" width="328" height="50"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create new Job:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9S-wn-zBa">
-                                    <rect key="frame" x="10" y="14.999999999999998" width="253" height="20.333333333333329"/>
+                                    <rect key="frame" x="10" y="14.666666666666684" width="253" height="20.333333333333329"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="33C-qn-CMM">
-                            <rect key="frame" x="16" y="66.000000000000014" width="296" height="206.33333333333337"/>
+                            <rect key="frame" x="16" y="65.999999999999986" width="296" height="227.66666666666663"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVW-mf-s1i">
                                     <rect key="frame" x="0.0" y="0.0" width="296" height="50"/>
@@ -68,8 +68,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQt-5Z-QOi">
-                                            <rect key="frame" x="47.666666666666671" y="8" width="238.33333333333331" height="34"/>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQt-5Z-QOi" customClass="TextFieldPrimary" customModule="JobOrderApp" customModuleProvider="target">
+                                            <rect key="frame" x="47.666666666666671" y="8" width="248.33333333333331" height="34"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -81,7 +81,7 @@
                                         <constraint firstItem="EQt-5Z-QOi" firstAttribute="leading" secondItem="8Qk-IR-uTg" secondAttribute="trailing" constant="10" id="UsN-0l-Z8C"/>
                                         <constraint firstAttribute="height" constant="50" id="cCD-Tu-1jk"/>
                                         <constraint firstItem="8Qk-IR-uTg" firstAttribute="leading" secondItem="AVW-mf-s1i" secondAttribute="leading" id="g9d-y9-Y1a"/>
-                                        <constraint firstAttribute="trailing" secondItem="EQt-5Z-QOi" secondAttribute="trailing" constant="10" id="svy-JE-p8R"/>
+                                        <constraint firstAttribute="trailing" secondItem="EQt-5Z-QOi" secondAttribute="trailing" id="svy-JE-p8R"/>
                                         <constraint firstItem="EQt-5Z-QOi" firstAttribute="centerY" secondItem="AVW-mf-s1i" secondAttribute="centerY" id="uo4-eH-3Oc"/>
                                     </constraints>
                                 </view>
@@ -91,8 +91,8 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="RKj-RW-uAP">
-                                    <rect key="frame" x="0.0" y="86.333333333333314" width="296" height="120"/>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="RKj-RW-uAP" customClass="TextViewPrimary" customModule="JobOrderApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="86.333333333333371" width="296" height="120"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="120" id="D8n-4t-G7g"/>
@@ -101,17 +101,22 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An error ocurred." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZV-uC-l8l">
+                                    <rect key="frame" x="0.0" y="214.33333333333331" width="90.333333333333329" height="13.333333333333343"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" name="error"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="RKj-RW-uAP" secondAttribute="bottom" id="JXU-LJ-fe8"/>
                                 <constraint firstItem="AVW-mf-s1i" firstAttribute="leading" secondItem="33C-qn-CMM" secondAttribute="leading" id="PZk-jp-TA2"/>
                                 <constraint firstItem="RKj-RW-uAP" firstAttribute="leading" secondItem="33C-qn-CMM" secondAttribute="leading" id="THv-Le-Hb2"/>
                                 <constraint firstAttribute="trailing" secondItem="RKj-RW-uAP" secondAttribute="trailing" id="qfG-R3-BaK"/>
                                 <constraint firstAttribute="trailing" secondItem="AVW-mf-s1i" secondAttribute="trailing" id="ycg-Jl-6ly"/>
                             </constraints>
                         </stackView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzr-Ot-tGO">
-                            <rect key="frame" x="104" y="288.33333333333337" width="120" height="40"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzr-Ot-tGO" customClass="ButtonPrimary" customModule="JobOrderApp" customModuleProvider="target">
+                            <rect key="frame" x="104" y="303.66666666666669" width="120" height="40"/>
                             <color key="backgroundColor" name="primary"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="120" id="WrN-P4-cAQ"/>
@@ -130,18 +135,19 @@
                         <constraint firstAttribute="trailing" secondItem="fqw-zU-FRL" secondAttribute="trailing" id="4Uc-hi-tGf"/>
                         <constraint firstAttribute="trailing" secondItem="33C-qn-CMM" secondAttribute="trailing" constant="16" id="5nz-t8-MDU"/>
                         <constraint firstItem="33C-qn-CMM" firstAttribute="top" secondItem="fqw-zU-FRL" secondAttribute="bottom" constant="16" id="8Jl-0F-hRZ"/>
-                        <constraint firstItem="Lzr-Ot-tGO" firstAttribute="top" secondItem="33C-qn-CMM" secondAttribute="bottom" constant="16" id="DYt-zN-GbW"/>
+                        <constraint firstItem="Lzr-Ot-tGO" firstAttribute="top" secondItem="33C-qn-CMM" secondAttribute="bottom" constant="10" id="DYt-zN-GbW"/>
                         <constraint firstItem="fqw-zU-FRL" firstAttribute="top" secondItem="wlQ-1U-SRC" secondAttribute="top" id="F9G-jg-Gq3"/>
-                        <constraint firstAttribute="height" constant="350" id="Ndq-O5-PyD"/>
                         <constraint firstItem="Lzr-Ot-tGO" firstAttribute="centerX" secondItem="33C-qn-CMM" secondAttribute="centerX" id="dJJ-Pa-8c2"/>
                         <constraint firstItem="fqw-zU-FRL" firstAttribute="leading" secondItem="wlQ-1U-SRC" secondAttribute="leading" id="dPF-jp-Vlq"/>
                         <constraint firstItem="33C-qn-CMM" firstAttribute="leading" secondItem="wlQ-1U-SRC" secondAttribute="leading" constant="16" id="ft7-hE-syA"/>
+                        <constraint firstAttribute="bottom" secondItem="Lzr-Ot-tGO" secondAttribute="bottom" constant="10" id="kvY-7W-H90"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="content50"/>
             <constraints>
+                <constraint firstItem="wlQ-1U-SRC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="7OO-Z7-smW"/>
                 <constraint firstItem="wlQ-1U-SRC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="aG6-0i-XeN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wlQ-1U-SRC" secondAttribute="trailing" constant="50" id="dKr-He-Gq9"/>
                 <constraint firstItem="wlQ-1U-SRC" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="yQd-7M-Nz2"/>
@@ -150,6 +156,7 @@
                 <outlet property="closeButton" destination="t47-vM-HVe" id="43e-HX-guf"/>
                 <outlet property="createButton" destination="Lzr-Ot-tGO" id="9S0-Zw-tN0"/>
                 <outlet property="descriptionTextView" destination="RKj-RW-uAP" id="LXe-No-Mi5"/>
+                <outlet property="errorMessageLabel" destination="8ZV-uC-l8l" id="kvL-In-3Xj"/>
                 <outlet property="titleTextField" destination="EQt-5Z-QOi" id="c4E-Hp-CVY"/>
             </connections>
             <point key="canvasLocation" x="138.78504672897196" y="68.682505399568043"/>
@@ -162,6 +169,9 @@
         </namedColor>
         <namedColor name="content50">
             <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="error">
+            <color red="0.98431372549019602" green="0.10196078431372549" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primary">
             <color red="1" green="0.7686274509803922" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
