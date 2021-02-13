@@ -7,9 +7,14 @@
 
 import UIKit
 
+protocol NewJobOrderPopupViewControllerProtocol {
+    func reloadData(_ viewController: NewJobOrderPopupViewController)
+}
+
 // MARK: - Properties/Init
 class NewJobOrderPopupViewController: BaseViewController {
     
+    var delegate: NewJobOrderPopupViewControllerProtocol?
     private var contentView: NewJobOrderPopupView?
     private var jobOrderProvider = BaseMoyaProvider<JobOrderService>()
     private lazy var presenter = NewJobOrderPopupPresenter(self, jobOrderProvider: jobOrderProvider)
@@ -91,7 +96,9 @@ extension NewJobOrderPopupViewController: NewJobOrderPopupPresenterView {
     }
     
     func successCreateNewJobOrder(_ presenter: NewJobOrderPopupPresenter) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true) {
+            self.delegate?.reloadData(self)
+        }
     }
     
     func onLoadingStart() {

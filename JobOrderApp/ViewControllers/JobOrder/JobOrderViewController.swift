@@ -118,12 +118,20 @@ extension JobOrderViewController: JobOrderPresenterView {
     }
 }
 
+// MARK: - JobOrderViewProtocol
 extension JobOrderViewController: JobOrderViewProtocol {
     func createButtonHandler(_ view: JobOrderView) {
-        self.goToNewJobOrderPopup(self)
+        self.goToNewJobOrderPopup(self, delegate: self)
     }
     
     func logoutButtonHandler(_ view: JobOrderView) {
         NotificationCenter.default.post(name: .shouldLogout, object: nil)
+    }
+}
+
+// MARK: - JobOrderViewProtocol
+extension JobOrderViewController: NewJobOrderPopupViewControllerProtocol {
+    func reloadData(_ viewController: NewJobOrderPopupViewController) {
+        self.fetchAllJobOrders()
     }
 }
