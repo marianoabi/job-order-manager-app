@@ -18,8 +18,8 @@ class LoginView: UIView {
     @IBOutlet weak var errorMessageLabel: UILabel!
     
     func setupView() {
-//        self.emailTextField.text = ""
-//        self.passwordTextField.text = ""
+        self.emailTextField.text = ""
+        self.passwordTextField.text = ""
         
         self.errorMessageLabel.isHidden = true
     }
