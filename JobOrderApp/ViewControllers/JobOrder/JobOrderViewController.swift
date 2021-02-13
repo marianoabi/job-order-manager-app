@@ -125,7 +125,18 @@ extension JobOrderViewController: JobOrderViewProtocol {
     }
     
     func logoutButtonHandler(_ view: JobOrderView) {
-        NotificationCenter.default.post(name: .shouldLogout, object: nil)
+        
+        let alert = UIAlertController(title: "Logout",
+                                      message: "Are you sure you want to logout?",
+                                      preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Logout", style: UIAlertAction.Style.default, handler: { _ in
+            NotificationCenter.default.post(name: .shouldLogout, object: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
