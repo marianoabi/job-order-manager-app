@@ -24,7 +24,6 @@ class NewJobOrderPopupView: UIView {
     
     func setupView() {
         self.showErrorMessage(false)
-        self.titleTextField.becomeFirstResponder()
     }
     
     @IBAction func didTappedCreateButton(_ sender: UIButton) {

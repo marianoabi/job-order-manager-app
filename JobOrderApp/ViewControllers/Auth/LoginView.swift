@@ -21,7 +21,6 @@ class LoginView: UIView {
 //        self.emailTextField.text = ""
 //        self.passwordTextField.text = ""
         
-        self.emailTextField.becomeFirstResponder()
         self.errorMessageLabel.isHidden = true
     }
     

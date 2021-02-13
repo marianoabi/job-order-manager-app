@@ -24,5 +24,6 @@ class ButtonPrimary: UIButton {
         self.layer.cornerRadius = 5
         self.backgroundColor = JobOrderApp.Color.primary
         self.titleLabel?.font = UIFont(name: JobOrderApp.Font.primaryRegular, size: self.titleLabel?.font.pointSize ?? 13)
+        self.titleLabel?.textColor = JobOrderApp.Color.content
     }
 }
