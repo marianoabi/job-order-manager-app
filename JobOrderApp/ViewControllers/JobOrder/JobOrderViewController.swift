@@ -60,12 +60,28 @@ extension JobOrderViewController {
     private func fetchAllJobOrders() {
         self.presenter.getAllJobs()
     }
+    
+    private func pullToRefresh() {
+        self.fetchAllJobOrders()
+    }
 }
 
 // MARK: - UICollectionViewDelegate
 extension JobOrderViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        guard let tableView = self.contentView?.jobOrderTableView else { return }
+        
+        let contentYoffset = scrollView.contentOffset.y
+        
+        if scrollView.contentSize.height >= tableView.bounds.height * 0.9 {
+            if contentYoffset <= -50 {
+                self.pullToRefresh()
+            }
+        }
     }
 }
 
@@ -80,12 +96,7 @@ extension JobOrderViewController: UITableViewDataSource {
         
         if let jobOrder = self.jobOrders?[indexPath.row] {
             cell?.updateData(with: jobOrder)
-            
-            var clientTest = jobOrder.clients!
-            clientTest.append(clientTest[0])
-            clientTest.append(clientTest[0])
-//            cell?.clients = jobOrder.clients
-            cell?.clients = clientTest
+            cell?.clients = jobOrder.clients
         }
         
         return cell!
@@ -113,6 +124,6 @@ extension JobOrderViewController: JobOrderViewProtocol {
     }
     
     func logoutButtonHandler(_ view: JobOrderView) {
-        print("Did logout.....")
+        NotificationCenter.default.post(name: .shouldLogout, object: nil)
     }
 }
