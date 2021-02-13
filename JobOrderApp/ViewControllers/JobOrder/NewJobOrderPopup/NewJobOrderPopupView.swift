@@ -22,6 +22,11 @@ class NewJobOrderPopupView: UIView {
     
     var delegate: NewJobOrderPopupViewProtocol?
     
+    func setupView() {
+        self.showErrorMessage(false)
+        self.titleTextField.becomeFirstResponder()
+    }
+    
     @IBAction func didTappedCreateButton(_ sender: UIButton) {
         
         if self.titleTextField.text?.isEmpty ?? true {

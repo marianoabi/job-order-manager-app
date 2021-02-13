@@ -31,7 +31,7 @@ extension NewJobOrderPopupViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.setupView()
+        self.setupViews()
         self.addKeyboardObservers()
     }
     
@@ -50,9 +50,11 @@ extension NewJobOrderPopupViewController {
 
 // MARK: - Methods
 extension NewJobOrderPopupViewController {
-    func setupView() {
+    func setupViews() {
         self.contentView?.delegate = self
-        self.contentView?.showErrorMessage(false)
+        self.contentView?.titleTextField.delegate = self
+        
+        self.contentView?.setupView()
     }
 }
 
@@ -102,5 +104,17 @@ extension NewJobOrderPopupViewController: NewJobOrderPopupPresenterView {
     
     func onError(error: String) {
         self.contentView?.showErrorMessage(true, with: error)
+    }
+}
+
+// MARK: - UITextFieldDelegate
+extension NewJobOrderPopupViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        if textField == self.contentView?.titleTextField {
+            self.contentView?.descriptionTextView.becomeFirstResponder()
+        }
+        return true
     }
 }

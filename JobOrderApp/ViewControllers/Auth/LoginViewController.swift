@@ -47,9 +47,11 @@ extension LoginViewController {
 // MARK: - Methods
 extension LoginViewController {
     private func setupViews() {
-        self.contentView?.delegate = self
+        self.contentView?.emailTextField.delegate = self
+        self.contentView?.passwordTextField.delegate = self
         
         self.contentView?.setupView()
+        self.contentView?.delegate = self
     }
 }
 
@@ -76,5 +78,17 @@ extension LoginViewController: LoginViewPresenterView {
     
     func onError(error: String) {
         self.contentView?.showErrorMessage(true, with: error)
+    }
+}
+
+// MARK: - UITextFieldDelegate
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        if textField == self.contentView?.emailTextField {
+            self.contentView?.passwordTextField.becomeFirstResponder()
+        }
+        return true
     }
 }
