@@ -30,20 +30,20 @@
                     <rect key="frame" x="0.0" y="194" width="414" height="668"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOB ORDERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7s-uu-Nra" customClass="LabelPrimaryBold" customModule="JobOrderApp" customModuleProvider="target">
-                    <rect key="frame" x="16" y="150" width="152" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOB ORDERS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7s-uu-Nra" customClass="LabelPrimaryBold" customModule="JobOrderApp" customModuleProvider="target">
+                    <rect key="frame" x="16" y="150" width="162" height="24"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDv-53-dQs" customClass="ButtonPrimary" customModule="JobOrderApp" customModuleProvider="target">
-                    <rect key="frame" x="178" y="139" width="140" height="40"/>
+                    <rect key="frame" x="188" y="142" width="130" height="40"/>
                     <color key="backgroundColor" name="primary"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="GVA-Kx-aC0"/>
-                        <constraint firstAttribute="width" constant="140" id="fnN-86-xIt"/>
+                        <constraint firstAttribute="width" constant="130" id="fnN-86-xIt"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="tintColor" name="content"/>
                     <state key="normal" title="Create New Job">
                         <color key="titleColor" name="content"/>
@@ -53,12 +53,13 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDD-Kb-o9p" customClass="ButtonPrimary" customModule="JobOrderApp" customModuleProvider="target">
-                    <rect key="frame" x="328" y="139" width="70" height="40"/>
+                    <rect key="frame" x="328" y="142" width="70" height="40"/>
                     <color key="backgroundColor" name="primary"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="N6R-aA-mDS"/>
                         <constraint firstAttribute="width" constant="70" id="l6w-PE-Vle"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <state key="normal" title="Logout">
                         <color key="titleColor" name="content"/>
                     </state>
@@ -70,14 +71,14 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="o1g-pw-VmI" firstAttribute="top" secondItem="pDD-Kb-o9p" secondAttribute="bottom" constant="15" id="0Jx-bd-rvo"/>
                 <constraint firstItem="pDD-Kb-o9p" firstAttribute="leading" secondItem="lDv-53-dQs" secondAttribute="trailing" constant="10" id="1vn-Ap-HtA"/>
                 <constraint firstItem="o1g-pw-VmI" firstAttribute="top" secondItem="F7s-uu-Nra" secondAttribute="bottom" constant="20" id="2PB-yW-IR0"/>
+                <constraint firstItem="pDD-Kb-o9p" firstAttribute="centerY" secondItem="lDv-53-dQs" secondAttribute="centerY" id="9nU-Q6-etv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pDD-Kb-o9p" secondAttribute="trailing" constant="16" id="AZJ-hc-Wlq"/>
-                <constraint firstItem="o1g-pw-VmI" firstAttribute="top" secondItem="lDv-53-dQs" secondAttribute="bottom" constant="15" id="LjL-sJ-fF0"/>
                 <constraint firstItem="UFb-82-M9v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Z0J-jw-kJg"/>
                 <constraint firstItem="F7s-uu-Nra" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="cby-Kt-42o"/>
                 <constraint firstItem="F7s-uu-Nra" firstAttribute="top" secondItem="UFb-82-M9v" secondAttribute="bottom" id="eyx-OQ-eGJ"/>
+                <constraint firstItem="lDv-53-dQs" firstAttribute="centerY" secondItem="F7s-uu-Nra" secondAttribute="centerY" id="kda-7w-dwa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o1g-pw-VmI" secondAttribute="trailing" id="nhi-xp-8Yo"/>
                 <constraint firstItem="lDv-53-dQs" firstAttribute="leading" secondItem="F7s-uu-Nra" secondAttribute="trailing" constant="10" id="opZ-qA-CKy"/>
                 <constraint firstItem="UFb-82-M9v" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pHI-EX-eSl"/>
