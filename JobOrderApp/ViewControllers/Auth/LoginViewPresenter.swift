@@ -7,10 +7,10 @@
 
 import Foundation
 import Moya_ObjectMapper
+import Moya
 
 protocol LoginViewPresenterView: BasePresenterView {
     func successLogin(_ presenter: LoginViewPresenter)
-    func failLogin(_ presenter: LoginViewPresenter)
 }
 
 // MARK: - Properties/Overrides
@@ -32,22 +32,53 @@ extension LoginViewPresenter {
             
             switch result {
             case .success(let response):
-                let authResponse = try? response.mapObject(AuthResponse.self)
-                if let aToken = authResponse?.accessToken, let rToken = authResponse?.refreshToken {
-                    print("Access token is \(aToken), refresh token is \(rToken)")
+                self.view?.onLoadingEnd?()
+                
+                do {
+                    _ = try response.filterSuccessfulStatusCodes()
+                    let authResponse = try response.mapObject(AuthResponse.self)
                     
-                    MyKeychain.storeAccessToken(aToken)
-                    MyKeychain.storeRefreshToken(rToken)
+                    if let aToken = authResponse.accessToken, let rToken = authResponse.refreshToken {
+                        
+                        MyKeychain.storeAccessToken(aToken)
+                        MyKeychain.storeRefreshToken(rToken)
+                        
+                        self.view?.successLogin(self)
+                    } else {
+                        self.view?.onError?(error: JobOrderApp.ErrorMessage.byDefault)
+                    }
                     
-                    self.view?.successLogin(self)
-                    self.view?.onLoadingEnd?()
-                } else {
-                    print("No token found.....")
+                } catch(let error) {
+                    
+                    if let error = error as? MoyaError {
+                        do {
+                            if let data = try error.response?.mapObject(BaseErrorResponse.self) {
+                                
+                                if let description = data.errorDescription {
+                                    self.view?.onError?(error: description)
+
+                                } else if let message = data.message {
+                                    self.view?.onError?(error: message)
+
+                                } else {
+                                    self.view?.onError?(error: data.message ?? JobOrderApp.ErrorMessage.byDefault)
+                                }
+                            }
+                            
+                        } catch {
+                            self.view?.onError?(error: JobOrderApp.ErrorMessage.byDefault)
+                            
+                        }
+                        
+                    } else {
+                        
+                        self.view?.onError?(error: JobOrderApp.ErrorMessage.byDefault)
+                    }
                 }
                 
             case let .failure(error):
                 self.view?.onLoadingEnd?()
-                self.view?.onError?(error: error.errorDescription ?? "An error ocurred.")
+                self.view?.onError?(error: error.errorDescription ?? JobOrderApp.ErrorMessage.byDefault)
                 self.view?.failLogin(self)
             }
         })

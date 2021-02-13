@@ -95,19 +95,12 @@ extension JobOrderViewController: UITableViewDataSource {
 // MARK: - JobOrderPresenterView
 extension JobOrderViewController: JobOrderPresenterView {
     func successFetchJobOrders(_ presenter: JobOrderPresenter, jobOrders: [JobOrder]) {
-        print("Success fetch job orders.....")
         self.jobOrders = jobOrders
-    }
-    
-    func failFetchJobOrders(_ presenter: JobOrderPresenter) {
-        print("Fail fetch job orders.....")
     }
 }
 
 extension JobOrderViewController: JobOrderViewProtocol {
     func createButtonHandler(_ view: JobOrderView) {
-        print("Did tapped create button.....")
-
         self.goToNewJobOrderPopup(self)
     }
     

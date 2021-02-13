@@ -44,14 +44,13 @@ extension LoginViewController {
         self.contentView?.delegate = self
         
         MyKeychain.removeAll()
+        self.contentView?.setupView()
     }
 }
 
 // MARK: - LoginViewView
 extension LoginViewController: LoginViewView {
     func loginButtonHandler(_ view: LoginView, email: String, password: String) {
-        print("Did Tapped Login Button *****")
-        
         self.presenter.login(email: email, password: password)
     }
 }
@@ -59,11 +58,10 @@ extension LoginViewController: LoginViewView {
 // MARK: - LoginViewPresenter
 extension LoginViewController: LoginViewPresenterView {
     func successLogin(_ presenter: LoginViewPresenter) {
-        print("Success login.....")
         NotificationCenter.default.post(name: .shouldGoToHomepage, object: nil)
     }
     
-    func failLogin(_ presenter: LoginViewPresenter) {
-        print("Failed to login.....")
+    func onError(error: String) {
+        self.contentView?.showErrorMessage(true, with: error)
     }
 }

@@ -18,29 +18,41 @@ class NewJobOrderPopupView: UIView {
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var errorMessageLabel: UILabel!
     
     var delegate: NewJobOrderPopupViewProtocol?
     
     @IBAction func didTappedCreateButton(_ sender: UIButton) {
         
-        if self.titleTextField.text == "" {
-            print("Title is required.")
+        if self.titleTextField.text?.isEmpty ?? true {
+            let message = JobOrderApp.ErrorMessage.titleRequired
+            self.showErrorMessage(true, with: message)
             return
         }
         
-        if self.descriptionTextView.text == "" {
-            print("Description is required.")
+        if self.descriptionTextView.text?.isEmpty ?? true {
+            let message = JobOrderApp.ErrorMessage.descriptionRequired
+            self.showErrorMessage(true, with: message)
             return
         }
         
-        let newJobOrder = JobOrder()
-        newJobOrder.title = self.titleTextField.text
-        newJobOrder.description = self.descriptionTextView.text
-//
-        self.delegate?.createButtonHandler(self, jobOrder: newJobOrder )
+        if let title = self.titleTextField.text, let description = self.descriptionTextView.text {
+            self.showErrorMessage(false)
+            
+            let newJobOrder = JobOrder()
+            newJobOrder.title = title
+            newJobOrder.description = description
+            
+            self.delegate?.createButtonHandler(self, jobOrder: newJobOrder )
+        }
     }
     
     @IBAction func didTappedCloseButton(_ sender: UIButton) {
         self.delegate?.closeButtonHandler(self)
+    }
+    
+    func showErrorMessage(_ show: Bool, with message: String = "") {
+        self.errorMessageLabel.isHidden = !show
+        self.errorMessageLabel.text = message
     }
 }

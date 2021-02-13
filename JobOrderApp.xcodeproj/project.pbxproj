@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		598B5DBC0A0C6D6C21A8AC01 /* Pods_JobOrderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE8019D3B7A1E2C14528A56 /* Pods_JobOrderApp.framework */; };
+		7F1B12B525D7C8A400CF0131 /* BaseErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B12B425D7C8A400CF0131 /* BaseErrorResponse.swift */; };
 		7F3D92BA25D4C6C0002D3BE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92B925D4C6C0002D3BE3 /* AppDelegate.swift */; };
 		7F3D92BC25D4C6C0002D3BE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D92BB25D4C6C0002D3BE3 /* SceneDelegate.swift */; };
 		7F3D92C125D4C6C0002D3BE3 /* JobOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3D92BF25D4C6C0002D3BE3 /* JobOrder.storyboard */; };
@@ -32,8 +33,6 @@
 		7F3D932B25D4E963002D3BE3 /* CoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D932A25D4E963002D3BE3 /* CoreService.swift */; };
 		7F3D933125D4F895002D3BE3 /* VerbosePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D933025D4F895002D3BE3 /* VerbosePlugin.swift */; };
 		7F3D933D25D4FFF5002D3BE3 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D933C25D4FFF5002D3BE3 /* AuthResponse.swift */; };
-		7F3D934025D50296002D3BE3 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D933F25D50296002D3BE3 /* BaseResponse.swift */; };
-		7F3D934725D515E9002D3BE3 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D934625D515E9002D3BE3 /* Company.swift */; };
 		7F3D934B25D5196F002D3BE3 /* NotifName+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D934A25D5196F002D3BE3 /* NotifName+Ext.swift */; };
 		7F3D934F25D519C9002D3BE3 /* JobOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D934E25D519C9002D3BE3 /* JobOrderApp.swift */; };
 		7F3D935225D51B5A002D3BE3 /* JobOrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D935125D51B5A002D3BE3 /* JobOrderService.swift */; };
@@ -57,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		61CC8E40A9543BA917D3F327 /* Pods-JobOrderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobOrderApp.release.xcconfig"; path = "Target Support Files/Pods-JobOrderApp/Pods-JobOrderApp.release.xcconfig"; sourceTree = "<group>"; };
+		7F1B12B425D7C8A400CF0131 /* BaseErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseErrorResponse.swift; sourceTree = "<group>"; };
 		7F3D92B625D4C6C0002D3BE3 /* JobOrderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobOrderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3D92B925D4C6C0002D3BE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F3D92BB25D4C6C0002D3BE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,8 +83,6 @@
 		7F3D932A25D4E963002D3BE3 /* CoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreService.swift; sourceTree = "<group>"; };
 		7F3D933025D4F895002D3BE3 /* VerbosePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbosePlugin.swift; sourceTree = "<group>"; };
 		7F3D933C25D4FFF5002D3BE3 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
-		7F3D933F25D50296002D3BE3 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
-		7F3D934625D515E9002D3BE3 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		7F3D934A25D5196F002D3BE3 /* NotifName+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotifName+Ext.swift"; sourceTree = "<group>"; };
 		7F3D934E25D519C9002D3BE3 /* JobOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobOrderApp.swift; sourceTree = "<group>"; };
 		7F3D935125D51B5A002D3BE3 /* JobOrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobOrderService.swift; sourceTree = "<group>"; };
@@ -227,7 +225,7 @@
 				7F3D92E925D4CAEA002D3BE3 /* BaseViewController.swift */,
 				7F3D92FF25D4CC71002D3BE3 /* BaseView.swift */,
 				7F3D930225D4CC83002D3BE3 /* BasePresenterView.swift */,
-				7F3D933F25D50296002D3BE3 /* BaseResponse.swift */,
+				7F1B12B425D7C8A400CF0131 /* BaseErrorResponse.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -277,7 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				7F3D933C25D4FFF5002D3BE3 /* AuthResponse.swift */,
-				7F3D934625D515E9002D3BE3 /* Company.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -517,13 +514,11 @@
 				7F9E472C25D6E679008A94C5 /* ButtonPrimary.swift in Sources */,
 				7F3D92F225D4CC0C002D3BE3 /* LoginViewController.swift in Sources */,
 				7F3D933125D4F895002D3BE3 /* VerbosePlugin.swift in Sources */,
-				7F3D934725D515E9002D3BE3 /* Company.swift in Sources */,
 				7F9E472725D6E53D008A94C5 /* TextFieldPrimary.swift in Sources */,
 				7F3D92DE25D4C822002D3BE3 /* JobOrderView.swift in Sources */,
 				7F9E46E125D62CD4008A94C5 /* Client.swift in Sources */,
 				7F3D934F25D519C9002D3BE3 /* JobOrderApp.swift in Sources */,
 				7F3D933D25D4FFF5002D3BE3 /* AuthResponse.swift in Sources */,
-				7F3D934025D50296002D3BE3 /* BaseResponse.swift in Sources */,
 				7F3D932825D4E8CD002D3BE3 /* BaseMoyaProvider.swift in Sources */,
 				7F9E471025D6807B008A94C5 /* NewJobOrderPopupView.swift in Sources */,
 				7F3D92D625D4C7DC002D3BE3 /* JobOrderViewController.swift in Sources */,
@@ -545,6 +540,7 @@
 				7F3D92EA25D4CAEA002D3BE3 /* BaseViewController.swift in Sources */,
 				7F9E471B25D6C353008A94C5 /* ViewWithBottomBorder.swift in Sources */,
 				7F3D935225D51B5A002D3BE3 /* JobOrderService.swift in Sources */,
+				7F1B12B525D7C8A400CF0131 /* BaseErrorResponse.swift in Sources */,
 				7F3D92F725D4CC21002D3BE3 /* LoginViewPresenter.swift in Sources */,
 				7F3D931B25D4E36E002D3BE3 /* MyKeychain.swift in Sources */,
 				7F3D930325D4CC83002D3BE3 /* BasePresenterView.swift in Sources */,

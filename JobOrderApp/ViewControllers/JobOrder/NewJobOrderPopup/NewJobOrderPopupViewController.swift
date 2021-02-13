@@ -46,13 +46,13 @@ extension NewJobOrderPopupViewController {
 extension NewJobOrderPopupViewController {
     func setupView() {
         self.contentView?.delegate = self
+        self.contentView?.showErrorMessage(false)
     }
 }
 
 // MARK: - NewJobOrderPopupViewProtocol
 extension NewJobOrderPopupViewController: NewJobOrderPopupViewProtocol {
     func createButtonHandler(_ view: NewJobOrderPopupView, jobOrder: JobOrder) {
-        print("Create a new Job.....")
         
         let address = Address()
         address.address1 = "10 Pitt Street"
@@ -70,7 +70,6 @@ extension NewJobOrderPopupViewController: NewJobOrderPopupViewProtocol {
     }
     
     func closeButtonHandler(_ view: NewJobOrderPopupView) {
-        print("Dismiss NewJobOrderPopupView.....")
         self.dismiss(animated: true, completion: nil)
     }
 }
@@ -78,27 +77,16 @@ extension NewJobOrderPopupViewController: NewJobOrderPopupViewProtocol {
 // MARK: - NewJobOrderPopupPresenterView
 extension NewJobOrderPopupViewController: NewJobOrderPopupPresenterView {
     func successGetAllJobStatus(_ presenter: NewJobOrderPopupPresenter) {
-        print("Success GetAllJobStatus")
-    }
-    
-    func failGetAllJobStatus(_ presenter: NewJobOrderPopupPresenter) {
-        print("Fail GetAllJobStatus")
     }
     
     func successGetAllClients(_ presenter: NewJobOrderPopupPresenter) {
-        print("Success GetAllClients")
-    }
-    
-    func failGetAllClients(_ presenter: NewJobOrderPopupPresenter) {
-        print("Fail GetAllClients")
     }
     
     func successCreateNewJobOrder(_ presenter: NewJobOrderPopupPresenter) {
-        print("Success Create New Job Order....")
         self.dismiss(animated: true, completion: nil)
     }
     
-    func failCreateNewJobOrder(_ presenter: NewJobOrderPopupPresenter) {
-        print("Fail to Create New Job Order....")
+    func onError(error: String) {
+        self.contentView?.showErrorMessage(true, with: error)
     }
 }

@@ -28,10 +28,6 @@ class BaseViewController: UIViewController {
         }
     }
     
-    func setPageTitle(to title: String) {
-        self.title = title
-    }
-    
     deinit {
         print("Deallocated - \(self)")
     }
