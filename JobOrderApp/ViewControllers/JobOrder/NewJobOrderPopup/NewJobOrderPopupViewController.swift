@@ -86,6 +86,14 @@ extension NewJobOrderPopupViewController: NewJobOrderPopupPresenterView {
         self.dismiss(animated: true, completion: nil)
     }
     
+    func onLoadingStart() {
+        self.showLoadingProgress()
+    }
+    
+    func onLoadingEnd() {
+        self.hideLoadingProgress()
+    }
+    
     func onError(error: String) {
         self.contentView?.showErrorMessage(true, with: error)
     }

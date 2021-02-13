@@ -61,6 +61,14 @@ extension LoginViewController: LoginViewPresenterView {
         NotificationCenter.default.post(name: .shouldGoToHomepage, object: nil)
     }
     
+    func onLoadingStart() {
+        self.showLoadingProgress()
+    }
+    
+    func onLoadingEnd() {
+        self.hideLoadingProgress()
+    }
+    
     func onError(error: String) {
         self.contentView?.showErrorMessage(true, with: error)
     }

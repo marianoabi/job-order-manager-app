@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class BaseViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -41,5 +42,16 @@ extension BaseViewController {
             viewController.modalPresentationStyle = .overFullScreen
             present(viewController, animated: true, completion: nil)
         }
+    }
+}
+
+// MARK: - MBProgressHUD
+extension BaseViewController {
+    func showLoadingProgress() {
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+    }
+    
+    func hideLoadingProgress() {
+        MBProgressHUD.hide(for: self.view, animated: true)
     }
 }

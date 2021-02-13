@@ -97,6 +97,14 @@ extension JobOrderViewController: JobOrderPresenterView {
     func successFetchJobOrders(_ presenter: JobOrderPresenter, jobOrders: [JobOrder]) {
         self.jobOrders = jobOrders
     }
+    
+    func onLoadingStart() {
+        self.showLoadingProgress()
+    }
+    
+    func onLoadingEnd() {
+        self.hideLoadingProgress()
+    }
 }
 
 extension JobOrderViewController: JobOrderViewProtocol {

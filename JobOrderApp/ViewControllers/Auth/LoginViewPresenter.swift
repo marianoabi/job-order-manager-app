@@ -27,6 +27,7 @@ class LoginViewPresenter {
 // MARK: - Functions
 extension LoginViewPresenter {
     func login(email: String, password: String) {
+        self.view?.onLoadingStart?()
         self.userProvider?.request(.login(email: email, password: password), completion: { [weak self] (result) in
             guard let self = self else { return }
             
