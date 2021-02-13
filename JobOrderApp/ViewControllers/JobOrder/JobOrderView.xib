@@ -30,17 +30,14 @@
                     <rect key="frame" x="0.0" y="194" width="414" height="668"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7s-uu-Nra">
-                    <rect key="frame" x="16" y="150" width="110" height="24"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="110" id="bfw-2r-FzE"/>
-                    </constraints>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOB ORDERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7s-uu-Nra" customClass="LabelPrimaryBold" customModule="JobOrderApp" customModuleProvider="target">
+                    <rect key="frame" x="16" y="150" width="152" height="24"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDv-53-dQs">
-                    <rect key="frame" x="188" y="139" width="140" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDv-53-dQs" customClass="ButtonPrimary" customModule="JobOrderApp" customModuleProvider="target">
+                    <rect key="frame" x="178" y="139" width="140" height="40"/>
                     <color key="backgroundColor" name="primary"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="GVA-Kx-aC0"/>
@@ -55,12 +52,12 @@
                         <action selector="didTappedCreateButton:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="q3r-S4-Fl8"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDD-Kb-o9p">
-                    <rect key="frame" x="338" y="139" width="60" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDD-Kb-o9p" customClass="ButtonPrimary" customModule="JobOrderApp" customModuleProvider="target">
+                    <rect key="frame" x="328" y="139" width="70" height="40"/>
                     <color key="backgroundColor" name="primary"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="N6R-aA-mDS"/>
-                        <constraint firstAttribute="width" constant="60" id="l6w-PE-Vle"/>
+                        <constraint firstAttribute="width" constant="70" id="l6w-PE-Vle"/>
                     </constraints>
                     <state key="normal" title="Logout">
                         <color key="titleColor" name="content"/>
@@ -82,6 +79,7 @@
                 <constraint firstItem="F7s-uu-Nra" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="cby-Kt-42o"/>
                 <constraint firstItem="F7s-uu-Nra" firstAttribute="top" secondItem="UFb-82-M9v" secondAttribute="bottom" id="eyx-OQ-eGJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o1g-pw-VmI" secondAttribute="trailing" id="nhi-xp-8Yo"/>
+                <constraint firstItem="lDv-53-dQs" firstAttribute="leading" secondItem="F7s-uu-Nra" secondAttribute="trailing" constant="10" id="opZ-qA-CKy"/>
                 <constraint firstItem="UFb-82-M9v" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pHI-EX-eSl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="o1g-pw-VmI" secondAttribute="bottom" id="qYH-oY-adC"/>
                 <constraint firstItem="UFb-82-M9v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wte-xC-cEt"/>

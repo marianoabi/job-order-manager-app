@@ -52,6 +52,14 @@
 		7F9E472725D6E53D008A94C5 /* TextFieldPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E472625D6E53D008A94C5 /* TextFieldPrimary.swift */; };
 		7F9E472C25D6E679008A94C5 /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E472B25D6E679008A94C5 /* ButtonPrimary.swift */; };
 		7F9E474A25D6E959008A94C5 /* TextViewPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E474925D6E959008A94C5 /* TextViewPrimary.swift */; };
+		7FC451A225D7FC0600ECCDF7 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4519D25D7FC0600ECCDF7 /* Comfortaa-Light.ttf */; };
+		7FC451A325D7FC0600ECCDF7 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4519E25D7FC0600ECCDF7 /* Comfortaa-Regular.ttf */; };
+		7FC451A425D7FC0600ECCDF7 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4519F25D7FC0600ECCDF7 /* Comfortaa-SemiBold.ttf */; };
+		7FC451A525D7FC0600ECCDF7 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FC451A025D7FC0600ECCDF7 /* Comfortaa-Bold.ttf */; };
+		7FC451A625D7FC0600ECCDF7 /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FC451A125D7FC0600ECCDF7 /* Comfortaa-Medium.ttf */; };
+		7FC451AB25D7FCB200ECCDF7 /* LabelPrimaryRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC451AA25D7FCB200ECCDF7 /* LabelPrimaryRegular.swift */; };
+		7FC451AE25D7FCEA00ECCDF7 /* LabelPrimaryBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC451AD25D7FCEA00ECCDF7 /* LabelPrimaryBold.swift */; };
+		7FC451B125D805A900ECCDF7 /* LabelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC451B025D805A900ECCDF7 /* LabelError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +110,14 @@
 		7F9E472625D6E53D008A94C5 /* TextFieldPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPrimary.swift; sourceTree = "<group>"; };
 		7F9E472B25D6E679008A94C5 /* ButtonPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
 		7F9E474925D6E959008A94C5 /* TextViewPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewPrimary.swift; sourceTree = "<group>"; };
+		7FC4519D25D7FC0600ECCDF7 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		7FC4519E25D7FC0600ECCDF7 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		7FC4519F25D7FC0600ECCDF7 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
+		7FC451A025D7FC0600ECCDF7 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		7FC451A125D7FC0600ECCDF7 /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
+		7FC451AA25D7FCB200ECCDF7 /* LabelPrimaryRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelPrimaryRegular.swift; sourceTree = "<group>"; };
+		7FC451AD25D7FCEA00ECCDF7 /* LabelPrimaryBold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelPrimaryBold.swift; sourceTree = "<group>"; };
+		7FC451B025D805A900ECCDF7 /* LabelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelError.swift; sourceTree = "<group>"; };
 		8CE8019D3B7A1E2C14528A56 /* Pods_JobOrderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobOrderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F271A1700437292050679D07 /* Pods-JobOrderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobOrderApp.debug.xcconfig"; path = "Target Support Files/Pods-JobOrderApp/Pods-JobOrderApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -233,11 +249,11 @@
 			isa = PBXGroup;
 			children = (
 				7F9E470525D67908008A94C5 /* NewJobOrderPopup */,
-				7F3D936C25D52B93002D3BE3 /* TableViewCell */,
 				7F3D92D425D4C7DC002D3BE3 /* JobOrderViewController.swift */,
 				7F3D92DA25D4C816002D3BE3 /* JobOrderPresenter.swift */,
 				7F3D92DD25D4C822002D3BE3 /* JobOrderView.swift */,
 				7F3D92D525D4C7DC002D3BE3 /* JobOrderView.xib */,
+				7F3D936C25D52B93002D3BE3 /* TableViewCell */,
 			);
 			path = JobOrder;
 			sourceTree = "<group>";
@@ -330,6 +346,8 @@
 		7F9E471725D6C260008A94C5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				7FC451A925D7FC7300ECCDF7 /* Labels */,
+				7FC451A825D7FC1000ECCDF7 /* Fonts */,
 				7F9E474825D6E944008A94C5 /* TextViews */,
 				7F9E472A25D6E66A008A94C5 /* Buttons */,
 				7F9E472525D6E523008A94C5 /* TextFields */,
@@ -370,6 +388,28 @@
 				7F9E474925D6E959008A94C5 /* TextViewPrimary.swift */,
 			);
 			path = TextViews;
+			sourceTree = "<group>";
+		};
+		7FC451A825D7FC1000ECCDF7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7FC451A025D7FC0600ECCDF7 /* Comfortaa-Bold.ttf */,
+				7FC4519D25D7FC0600ECCDF7 /* Comfortaa-Light.ttf */,
+				7FC451A125D7FC0600ECCDF7 /* Comfortaa-Medium.ttf */,
+				7FC4519E25D7FC0600ECCDF7 /* Comfortaa-Regular.ttf */,
+				7FC4519F25D7FC0600ECCDF7 /* Comfortaa-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7FC451A925D7FC7300ECCDF7 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				7FC451AA25D7FCB200ECCDF7 /* LabelPrimaryRegular.swift */,
+				7FC451AD25D7FCEA00ECCDF7 /* LabelPrimaryBold.swift */,
+				7FC451B025D805A900ECCDF7 /* LabelError.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 		D0E8FA06B8D74B9B2A291F78 /* Pods */ = {
@@ -442,12 +482,17 @@
 			files = (
 				7F3D930625D4D182002D3BE3 /* Auth.storyboard in Resources */,
 				7F3D92F325D4CC0C002D3BE3 /* LoginView.xib in Resources */,
+				7FC451A625D7FC0600ECCDF7 /* Comfortaa-Medium.ttf in Resources */,
 				7F3D92C625D4C6C2002D3BE3 /* LaunchScreen.storyboard in Resources */,
 				7F9E470925D67A42008A94C5 /* NewJobOrderPopupView.xib in Resources */,
+				7FC451A225D7FC0600ECCDF7 /* Comfortaa-Light.ttf in Resources */,
 				7F3D937025D52BCD002D3BE3 /* JobOrderTableViewCell.xib in Resources */,
 				7F3D92D725D4C7DC002D3BE3 /* JobOrderView.xib in Resources */,
 				7F3D92C325D4C6C2002D3BE3 /* Assets.xcassets in Resources */,
+				7FC451A525D7FC0600ECCDF7 /* Comfortaa-Bold.ttf in Resources */,
+				7FC451A325D7FC0600ECCDF7 /* Comfortaa-Regular.ttf in Resources */,
 				7F3D92C125D4C6C0002D3BE3 /* JobOrder.storyboard in Resources */,
+				7FC451A425D7FC0600ECCDF7 /* Comfortaa-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +545,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FC451B125D805A900ECCDF7 /* LabelError.swift in Sources */,
 				7F9E470C25D68062008A94C5 /* NewJobOrderPopupPresenter.swift in Sources */,
+				7FC451AB25D7FCB200ECCDF7 /* LabelPrimaryRegular.swift in Sources */,
 				7F3D932525D4E8A7002D3BE3 /* UserService.swift in Sources */,
 				7F3D934B25D5196F002D3BE3 /* NotifName+Ext.swift in Sources */,
 				7F9E472C25D6E679008A94C5 /* ButtonPrimary.swift in Sources */,
@@ -513,6 +560,7 @@
 				7F3D933D25D4FFF5002D3BE3 /* AuthResponse.swift in Sources */,
 				7F3D932825D4E8CD002D3BE3 /* BaseMoyaProvider.swift in Sources */,
 				7F9E471025D6807B008A94C5 /* NewJobOrderPopupView.swift in Sources */,
+				7FC451AE25D7FCEA00ECCDF7 /* LabelPrimaryBold.swift in Sources */,
 				7F3D92D625D4C7DC002D3BE3 /* JobOrderViewController.swift in Sources */,
 				7F3D92FB25D4CC2A002D3BE3 /* LoginView.swift in Sources */,
 				7F9E46DE25D6231C008A94C5 /* JobOrder.swift in Sources */,

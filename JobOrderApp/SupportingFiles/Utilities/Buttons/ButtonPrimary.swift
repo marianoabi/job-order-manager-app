@@ -23,5 +23,6 @@ class ButtonPrimary: UIButton {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.layer.cornerRadius = 5
         self.backgroundColor = JobOrderApp.Color.primary
+        self.titleLabel?.font = UIFont(name: JobOrderApp.Font.primaryRegular, size: self.titleLabel?.font.pointSize ?? 13)
     }
 }

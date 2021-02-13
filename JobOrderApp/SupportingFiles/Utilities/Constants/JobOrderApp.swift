@@ -45,6 +45,7 @@ struct JobOrderApp {
     }
     
     struct Font {
-        
+        static let primaryRegular = "Comfortaa-Regular"
+        static let primaryBold = "Comfortaa-Bold"
     }
 }

@@ -19,5 +19,6 @@ class TextViewPrimary: UITextView {
         self.layer.borderWidth = 1
         self.layer.borderColor = color
         self.layer.cornerRadius = 5
+        self.font = UIFont(name: JobOrderApp.Font.primaryRegular, size: self.font?.pointSize ?? 13)
     }
 }

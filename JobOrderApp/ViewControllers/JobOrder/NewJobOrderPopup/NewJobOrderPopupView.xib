@@ -22,12 +22,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlQ-1U-SRC">
-                    <rect key="frame" x="50" y="291.33333333333326" width="328" height="353.66666666666674"/>
+                    <rect key="frame" x="50" y="293" width="328" height="350.33333333333326"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqw-zU-FRL">
                             <rect key="frame" x="0.0" y="0.0" width="328" height="50"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create new Job:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9S-wn-zBa">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create new Job:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9S-wn-zBa" customClass="LabelPrimaryBold" customModule="JobOrderApp" customModuleProvider="target">
                                     <rect key="frame" x="10" y="14.666666666666684" width="253" height="20.333333333333329"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
@@ -57,20 +57,20 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="33C-qn-CMM">
-                            <rect key="frame" x="16" y="65.999999999999986" width="296" height="227.66666666666663"/>
+                            <rect key="frame" x="16" y="66.000000000000014" width="296" height="224.33333333333337"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVW-mf-s1i">
                                     <rect key="frame" x="0.0" y="0.0" width="296" height="50"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qk-IR-uTg">
-                                            <rect key="frame" x="0.0" y="0.0" width="37.666666666666664" height="50"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qk-IR-uTg" customClass="LabelPrimaryRegular" customModule="JobOrderApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="32.333333333333336" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQt-5Z-QOi" customClass="TextFieldPrimary" customModule="JobOrderApp" customModuleProvider="target">
-                                            <rect key="frame" x="47.666666666666671" y="8" width="248.33333333333331" height="34"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <rect key="frame" x="42.333333333333329" y="8" width="253.66666666666669" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
@@ -85,14 +85,14 @@
                                         <constraint firstItem="EQt-5Z-QOi" firstAttribute="centerY" secondItem="AVW-mf-s1i" secondAttribute="centerY" id="uo4-eH-3Oc"/>
                                     </constraints>
                                 </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIX-Mz-hMb">
-                                    <rect key="frame" x="0.0" y="58.000000000000007" width="92" height="20.333333333333336"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIX-Mz-hMb" customClass="LabelPrimaryRegular" customModule="JobOrderApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="58" width="78.333333333333329" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="RKj-RW-uAP" customClass="TextViewPrimary" customModule="JobOrderApp" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="86.333333333333371" width="296" height="120"/>
+                                    <rect key="frame" x="0.0" y="83" width="296" height="120"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="120" id="D8n-4t-G7g"/>
@@ -101,10 +101,10 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An error ocurred." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZV-uC-l8l">
-                                    <rect key="frame" x="0.0" y="214.33333333333331" width="90.333333333333329" height="13.333333333333343"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An error ocurred." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZV-uC-l8l" customClass="LabelError" customModule="JobOrderApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="211" width="90.333333333333329" height="13.333333333333343"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                    <color key="textColor" name="error"/>
+                                    <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -116,7 +116,7 @@
                             </constraints>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzr-Ot-tGO" customClass="ButtonPrimary" customModule="JobOrderApp" customModuleProvider="target">
-                            <rect key="frame" x="104" y="303.66666666666669" width="120" height="40"/>
+                            <rect key="frame" x="104" y="300.33333333333337" width="120" height="40"/>
                             <color key="backgroundColor" name="primary"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="120" id="WrN-P4-cAQ"/>
@@ -169,9 +169,6 @@
         </namedColor>
         <namedColor name="content50">
             <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="error">
-            <color red="0.98431372549019602" green="0.10196078431372549" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primary">
             <color red="1" green="0.7686274509803922" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
