@@ -34,9 +34,9 @@
                                         <color key="textColor" name="brownGray"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gkJ-eN-ChN" customClass="LabelPrimaryRegular" customModule="JobOrderApp" customModuleProvider="target">
-                                        <rect key="frame" x="337" y="10" width="106" height="19.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gkJ-eN-ChN" customClass="LabelPrimaryBold" customModule="JobOrderApp" customModuleProvider="target">
+                                        <rect key="frame" x="337" y="10" width="106" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" name="success"/>
                                         <nil key="highlightedColor"/>
                                     </label>
