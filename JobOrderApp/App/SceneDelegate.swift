@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
-        self.setupObserver()
+        self.setupObservers()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -49,12 +49,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 // MARK: - Methods
 extension SceneDelegate {
-    func setupObserver() {
+    func setupObservers() {
         NotificationCenter.default.addObserver(self, selector: #selector(goToHomePage), name: .shouldGoToHomepage, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(logoutUser), name: .shouldLogout, object: nil)
     }
     
-    @objc func goToHomePage() {
+    @objc private func goToHomePage() {
         if let viewController = UIStoryboard(name: "JobOrder", bundle: nil).instantiateViewController(withIdentifier: "JobOrderViewController") as? JobOrderViewController {
+            self.window?.rootViewController = viewController
+            window?.makeKeyAndVisible()
+        }
+    }
+    
+    @objc private func logoutUser() {
+        // Clear token
+        MyKeychain.removeAll()
+        self.showLoginPage()
+    }
+    
+    private func showLoginPage() {
+        if let viewController = UIStoryboard(name: "Auth", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
             self.window?.rootViewController = viewController
             window?.makeKeyAndVisible()
         }

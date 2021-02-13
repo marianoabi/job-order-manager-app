@@ -43,7 +43,6 @@ extension LoginViewController {
     private func setupViews() {
         self.contentView?.delegate = self
         
-        MyKeychain.removeAll()
         self.contentView?.setupView()
     }
 }

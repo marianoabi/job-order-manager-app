@@ -9,4 +9,5 @@ import UIKit
 
 extension Notification.Name {
     static let shouldGoToHomepage = Notification.Name(JobOrderApp.NotificationName.shouldGoToHomepage)
+    static let shouldLogout = Notification.Name(JobOrderApp.NotificationName.shouldLogout)
 }
