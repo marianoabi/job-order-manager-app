@@ -32,6 +32,7 @@ extension NewJobOrderPopupViewController {
         super.viewDidLoad()
 
         self.setupView()
+        self.addKeyboardObservers()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,6 +40,11 @@ extension NewJobOrderPopupViewController {
         
 //        self.presenter.getAllJobStatus()
 //        self.presenter.getAllClients()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        super.removeKeyboardObservers()
     }
 }
 

@@ -29,8 +29,27 @@ class BaseViewController: UIViewController {
         }
     }
     
+    func addKeyboardObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(sender:)), name: UIResponder.keyboardWillShowNotification, object: nil);
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: UIResponder.keyboardWillHideNotification, object: nil);
+    }
+    
+    func removeKeyboardObservers() {
+        NotificationCenter.default.removeObserver(UIResponder.keyboardWillShowNotification)
+        NotificationCenter.default.removeObserver(UIResponder.keyboardWillHideNotification)
+    }
+    
+    @objc func keyboardWillShow(sender: NSNotification) {
+         self.view.frame.origin.y = -100
+    }
+
+    @objc func keyboardWillHide(sender: NSNotification) {
+         self.view.frame.origin.y = 0
+    }
+    
     deinit {
         print("Deallocated - \(self)")
+        self.removeKeyboardObservers()
     }
 }
 

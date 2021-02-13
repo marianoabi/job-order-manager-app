@@ -29,16 +29,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Order Manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzt-FB-3uK" customClass="LabelPrimaryBold" customModule="JobOrderApp" customModuleProvider="target">
-                    <rect key="frame" x="124" y="363" width="166" height="22.5"/>
+                    <rect key="frame" x="124" y="383" width="166" height="22.5"/>
                     <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="19"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLogo" translatesAutoresizingMaskIntoConstraints="NO" id="qza-2d-Mxj">
-                    <rect key="frame" x="60" y="84" width="294" height="269"/>
+                    <rect key="frame" x="60" y="104" width="294" height="269"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RVR-69-Ibx">
-                    <rect key="frame" x="50" y="435.5" width="314" height="163.5"/>
+                    <rect key="frame" x="50" y="475.5" width="314" height="163.5"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="marianoabby@gmail.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DeL-9C-bIh" customClass="TextFieldPrimary" customModule="JobOrderApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
@@ -84,10 +84,10 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qza-2d-Mxj" secondAttribute="trailing" constant="60" id="7sT-NW-mVo"/>
                 <constraint firstItem="qza-2d-Mxj" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="CE9-we-JE4"/>
                 <constraint firstItem="qza-2d-Mxj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="Kzg-cr-0tw"/>
-                <constraint firstItem="qza-2d-Mxj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="NR6-zH-aFS"/>
+                <constraint firstItem="qza-2d-Mxj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="NR6-zH-aFS"/>
                 <constraint firstItem="dzt-FB-3uK" firstAttribute="centerX" secondItem="qza-2d-Mxj" secondAttribute="centerX" id="Pt9-Ms-Jsf"/>
                 <constraint firstItem="RVR-69-Ibx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="RhT-hR-ogb"/>
-                <constraint firstItem="RVR-69-Ibx" firstAttribute="top" secondItem="dzt-FB-3uK" secondAttribute="bottom" constant="50" id="SJR-Uj-5ih"/>
+                <constraint firstItem="RVR-69-Ibx" firstAttribute="top" secondItem="dzt-FB-3uK" secondAttribute="bottom" constant="70" id="SJR-Uj-5ih"/>
                 <constraint firstItem="dzt-FB-3uK" firstAttribute="top" secondItem="qza-2d-Mxj" secondAttribute="bottom" constant="10" id="fH2-n9-Yyd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RVR-69-Ibx" secondAttribute="trailing" constant="50" id="gyR-JJ-pAt"/>
             </constraints>
