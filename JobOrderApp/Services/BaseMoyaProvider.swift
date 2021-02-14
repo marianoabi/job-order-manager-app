@@ -31,7 +31,7 @@ class BaseMoyaProvider<Target> where Target: Moya.TargetType {
             case .failure(let error):
                 if error.response?.statusCode == 401 || error.response?.statusCode == 403 {
                     if let token = MyKeychain.getAccessToken(), !token.isEmpty {
-//                        NotificationCenter.default.post(name: .shouldLogout, object: nil, userInfo: nil)
+                        NotificationCenter.default.post(name: .shouldLogout, object: nil, userInfo: nil)
                     }
                 }
                 completion(.failure(error))

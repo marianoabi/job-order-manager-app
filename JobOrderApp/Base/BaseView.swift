@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: - Properties/Overrides
 class BaseView: UIView {
     public var identifier: String! {
         return "\(self.typeName(self))"
@@ -23,7 +24,10 @@ class BaseView: UIView {
         super.init(frame: frame)
         initView()
     }
-    
+}
+
+// MARK: - Functions/Methods
+extension BaseView {
     private func typeName(_ some: Any) -> String {
         return (some is Any.Type) ? "\(some)" : "\(type(of: some))"
     }

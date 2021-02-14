@@ -47,7 +47,7 @@ extension JobOrderViewController {
     }
 }
 
-// MARK: - Methods
+// MARK: - Functions/Methods
 extension JobOrderViewController {
     private func setupViews() {
         self.contentView?.jobOrderTableView.register(JobOrderTableViewCell().convertToNib(), forCellReuseIdentifier: JobOrderTableViewCell().identifier)
@@ -66,7 +66,7 @@ extension JobOrderViewController {
     }
 }
 
-// MARK: - UICollectionViewDelegate
+// MARK: - UITableViewDelegate
 extension JobOrderViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
@@ -85,7 +85,7 @@ extension JobOrderViewController: UITableViewDelegate {
     }
 }
 
-// MARK: - UICollectionViewDataSource
+// MARK: - UITableViewDataSource
 extension JobOrderViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.jobOrders?.count ?? 0
@@ -139,7 +139,7 @@ extension JobOrderViewController: JobOrderViewProtocol {
     }
 }
 
-// MARK: - JobOrderViewProtocol
+// MARK: - NewJobOrderPopupViewControllerProtocol
 extension JobOrderViewController: NewJobOrderPopupViewControllerProtocol {
     func reloadData(_ viewController: NewJobOrderPopupViewController) {
         self.fetchAllJobOrders()

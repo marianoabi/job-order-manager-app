@@ -7,12 +7,14 @@
 
 import UIKit
 
+// MARK: - Protocol
 protocol NewJobOrderPopupViewProtocol {
     func createButtonHandler(_ view: NewJobOrderPopupView, jobOrder: JobOrder)
     func closeButtonHandler(_ view: NewJobOrderPopupView)
 }
 
-class NewJobOrderPopupView: UIView {
+// MARK: - Properties/Overrides
+class NewJobOrderPopupView: BaseView {
     @IBOutlet weak var createButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     
@@ -21,10 +23,6 @@ class NewJobOrderPopupView: UIView {
     @IBOutlet weak var errorMessageLabel: UILabel!
     
     var delegate: NewJobOrderPopupViewProtocol?
-    
-    func setupView() {
-        self.showErrorMessage(false)
-    }
     
     @IBAction func didTappedCreateButton(_ sender: UIButton) {
         
@@ -53,6 +51,13 @@ class NewJobOrderPopupView: UIView {
     
     @IBAction func didTappedCloseButton(_ sender: UIButton) {
         self.delegate?.closeButtonHandler(self)
+    }
+}
+
+// MARK: - Functions/Methods
+extension NewJobOrderPopupView {
+    func setupView() {
+        self.showErrorMessage(false)
     }
     
     func showErrorMessage(_ show: Bool, with message: String = "") {

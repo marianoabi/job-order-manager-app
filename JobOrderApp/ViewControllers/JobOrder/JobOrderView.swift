@@ -7,12 +7,13 @@
 
 import UIKit
 
+// MARK: - Protocol
 protocol JobOrderViewProtocol {
     func logoutButtonHandler(_ view: JobOrderView)
     func createButtonHandler(_ view: JobOrderView)
 }
 
-
+// MARK: - Properties/Overrides
 class JobOrderView: UIView {
     var delegate: JobOrderViewProtocol?
     

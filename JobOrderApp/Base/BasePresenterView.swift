@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Optionals
 @objc protocol BasePresenterView {
     @objc optional func onLoadingStart()
     @objc optional func onLoadingEnd()

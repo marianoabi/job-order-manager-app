@@ -8,6 +8,7 @@
 import UIKit
 import MBProgressHUD
 
+// MARK: - Properties/Overrides
 class BaseViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -29,6 +30,14 @@ class BaseViewController: UIViewController {
         }
     }
     
+    deinit {
+        print("Deallocated - \(self)")
+        self.removeKeyboardObservers()
+    }
+}
+
+// MARK: - Functions/Methods
+extension BaseViewController {
     func addKeyboardObservers() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(sender:)), name: UIResponder.keyboardWillShowNotification, object: nil);
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: UIResponder.keyboardWillHideNotification, object: nil);
@@ -45,11 +54,6 @@ class BaseViewController: UIViewController {
 
     @objc func keyboardWillHide(sender: NSNotification) {
          self.view.frame.origin.y = 0
-    }
-    
-    deinit {
-        print("Deallocated - \(self)")
-        self.removeKeyboardObservers()
     }
 }
 

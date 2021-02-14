@@ -7,10 +7,12 @@
 
 import UIKit
 
+// MARK: - Protocol
 protocol LoginViewView {
     func loginButtonHandler(_ view: LoginView, email: String, password: String)
 }
 
+// MARK: - Properties/Overrides
 class LoginView: UIView {
     var delegate: LoginViewView?
     @IBOutlet weak var emailTextField: UITextField!
@@ -43,7 +45,10 @@ class LoginView: UIView {
             self.delegate?.loginButtonHandler(self, email: email, password: password)
         }
     }
-    
+}
+
+// MARK: - Functions/Methods
+extension LoginView {
     func showErrorMessage(_ show: Bool, with message: String = "") {
         self.errorMessageLabel.isHidden = !show
         self.errorMessageLabel.text = message

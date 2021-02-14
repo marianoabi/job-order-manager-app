@@ -27,8 +27,10 @@ extension JobOrderService: BaseService {
             
         case .getAllJobStatus:
             return "/api/v1/job_status"
+            
         case .getAllClients:
             return "/api/v1/client"
+            
         }
     }
     

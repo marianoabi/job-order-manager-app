@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: - Properties/Overrides
 class JobOrderTableViewCell: BaseTableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -26,10 +27,10 @@ class JobOrderTableViewCell: BaseTableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
-    
+}
+// MARK: - Functions/Methods
+extension JobOrderTableViewCell {
     func updateData(with jobOrder: JobOrder) {
-//        self.wrapperView.addShadow()
-
         self.titleLabel.text = jobOrder.title
         
         if let status = jobOrder.status {

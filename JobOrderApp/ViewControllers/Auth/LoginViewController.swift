@@ -44,7 +44,7 @@ extension LoginViewController {
     }
 }
 
-// MARK: - Methods
+// MARK: - Functions/Methods
 extension LoginViewController {
     private func setupViews() {
         self.contentView?.emailTextField.delegate = self
@@ -62,7 +62,7 @@ extension LoginViewController: LoginViewView {
     }
 }
 
-// MARK: - LoginViewPresenter
+// MARK: - LoginViewPresenterView
 extension LoginViewController: LoginViewPresenterView {
     func successLogin(_ presenter: LoginViewPresenter) {
         NotificationCenter.default.post(name: .shouldGoToHomepage, object: nil)

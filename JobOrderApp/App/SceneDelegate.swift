@@ -51,7 +51,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
-// MARK: - Methods
+// MARK: - Functions/Methods
 extension SceneDelegate {
     func setupObservers() {
         NotificationCenter.default.addObserver(self, selector: #selector(goToHomePage), name: .shouldGoToHomepage, object: nil)

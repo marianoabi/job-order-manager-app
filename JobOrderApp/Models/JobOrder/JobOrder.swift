@@ -16,8 +16,6 @@ class JobOrder: Mappable {
     var jobAddress: Address?
     var status: JobStatus?
     
-//    var orderNumber: String?
-//    var billedClientID: String?
     var priority: Int? = 0
     var jobStatusID: Int? = 0
     var clientID: Int? = 0

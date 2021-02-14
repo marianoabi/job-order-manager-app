@@ -9,6 +9,7 @@ import Foundation
 import Moya_ObjectMapper
 import Moya
 
+// MARK: - Protocol
 protocol LoginViewPresenterView: BasePresenterView {
     func successLogin(_ presenter: LoginViewPresenter)
 }
@@ -24,7 +25,7 @@ class LoginViewPresenter {
     }
 }
 
-// MARK: - Functions
+// MARK: - API Calls
 extension LoginViewPresenter {
     func login(email: String, password: String) {
         self.view?.onLoadingStart?()

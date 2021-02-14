@@ -14,7 +14,7 @@ class MyKeychain {
     private static var refreshToken = "refreshToken"
 }
 
-// MARK: - Methods
+// MARK: - Functions/Methods
 extension MyKeychain {
     class func storeAccessToken(_ token: String) {
         KeychainWrapper.standard.set(token, forKey: self.accessToken)

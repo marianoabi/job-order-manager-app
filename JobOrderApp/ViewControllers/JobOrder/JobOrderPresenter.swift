@@ -8,10 +8,12 @@
 import Moya_ObjectMapper
 import Moya
 
+// MARK: - Protocol
 protocol JobOrderPresenterView: BasePresenterView {
     func successFetchJobOrders(_ presenter: JobOrderPresenter, jobOrders: [JobOrder])
 }
 
+// MARK: - Properties/Overrides
 class JobOrderPresenter {
     var view: JobOrderPresenterView?
     var jobOrderProvider: BaseMoyaProvider<JobOrderService>?
@@ -22,6 +24,7 @@ class JobOrderPresenter {
     }
 }
 
+// MARK: - API Calls
 extension JobOrderPresenter {
     func getAllJobs() {
         self.view?.onLoadingStart?()

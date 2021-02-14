@@ -7,11 +7,12 @@
 
 import UIKit
 
+// MARK: - Protocol
 protocol NewJobOrderPopupViewControllerProtocol {
     func reloadData(_ viewController: NewJobOrderPopupViewController)
 }
 
-// MARK: - Properties/Init
+// MARK: - Properties/Overrides
 class NewJobOrderPopupViewController: BaseViewController {
     
     var delegate: NewJobOrderPopupViewControllerProtocol?
@@ -53,7 +54,7 @@ extension NewJobOrderPopupViewController {
     }
 }
 
-// MARK: - Methods
+// MARK: - Functions/Methods
 extension NewJobOrderPopupViewController {
     func setupViews() {
         self.contentView?.delegate = self

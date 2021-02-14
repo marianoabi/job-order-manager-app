@@ -13,10 +13,6 @@ class Address: Mappable {
     var state: String?
     var postCode: String?
     
-    var address2: String?
-    var country: String?
-    var longitude: String?
-    var latitude: String?
     var active: Bool? = false
     
     required convenience init?(map: Map) {
@@ -28,6 +24,5 @@ class Address: Mappable {
         city <- map["city"]
         state <- map["state"]
         postCode <- map["postcode"]
-        active <- map["active"]
     }
 }
