@@ -59,7 +59,7 @@ extension SceneDelegate {
     }
     
     @objc private func goToHomePage() {
-        if let viewController = UIStoryboard(name: "JobOrder", bundle: nil).instantiateViewController(withIdentifier: "JobOrderViewController") as? JobOrderViewController {
+        if let viewController = UIStoryboard(name: JobOrderApp.Storyboard.jobOrder, bundle: nil).instantiateViewController(withIdentifier: JobOrderApp.ViewController.jobOrderViewController) as? JobOrderViewController {
             self.window?.rootViewController = viewController
             window?.makeKeyAndVisible()
         }
@@ -72,7 +72,7 @@ extension SceneDelegate {
     }
     
     private func showLoginPage() {
-        if let viewController = UIStoryboard(name: "Auth", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
+        if let viewController = UIStoryboard(name: JobOrderApp.Storyboard.auth, bundle: nil).instantiateViewController(withIdentifier: JobOrderApp.ViewController.loginViewController) as? LoginViewController {
             self.window?.rootViewController = viewController
             window?.makeKeyAndVisible()
         }
