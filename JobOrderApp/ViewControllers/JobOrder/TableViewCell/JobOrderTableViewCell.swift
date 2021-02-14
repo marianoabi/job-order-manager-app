@@ -17,9 +17,7 @@ class JobOrderTableViewCell: BaseTableViewCell {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var wrapperView: UIView!
-    
-    var clients: [Client]?
-    
+        
     override func awakeFromNib() {
         super.awakeFromNib()
     }

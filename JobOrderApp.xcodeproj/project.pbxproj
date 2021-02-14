@@ -181,6 +181,7 @@
 			children = (
 				7F3D932E25D4F637002D3BE3 /* API */,
 				7F3D931625D4E2F3002D3BE3 /* BaseService.swift */,
+				7F1B12B425D7C8A400CF0131 /* BaseErrorResponse.swift */,
 				7F3D932725D4E8CD002D3BE3 /* BaseMoyaProvider.swift */,
 				7F3D932A25D4E963002D3BE3 /* CoreService.swift */,
 				7F3D933025D4F895002D3BE3 /* VerbosePlugin.swift */,
@@ -242,7 +243,6 @@
 				7F3D92E925D4CAEA002D3BE3 /* BaseViewController.swift */,
 				7F3D92FF25D4CC71002D3BE3 /* BaseView.swift */,
 				7F3D930225D4CC83002D3BE3 /* BasePresenterView.swift */,
-				7F1B12B425D7C8A400CF0131 /* BaseErrorResponse.swift */,
 				7FC451B725D8213600ECCDF7 /* BaseTableViewCell.swift */,
 			);
 			path = Base;

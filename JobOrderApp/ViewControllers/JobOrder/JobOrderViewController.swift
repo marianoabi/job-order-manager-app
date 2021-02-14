@@ -96,7 +96,6 @@ extension JobOrderViewController: UITableViewDataSource {
         
         if let jobOrder = self.jobOrders?[indexPath.row] {
             cell?.updateData(with: jobOrder)
-            cell?.clients = jobOrder.clients
         }
         
         return cell!
